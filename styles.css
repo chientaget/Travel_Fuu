@@ -1,0 +1,58 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.square-box {
+    height: 384px;
+    /*width: 426px;*/
+    background-color: rgb(255, 255, 255);
+    padding: 32px;
+    margin: 48px;
+    border-radius: 32px;
+    box-shadow: rgba(16, 24, 40, 0.06) 0px 1px 2px 0px, rgba(16, 24, 40, 0.1) 0px 1px 3px 0px;
+}
+
+
+.navbar {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.navbar-brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-contact {
+    border-radius: 100px;
+    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+    background-color: #77dada;
+    border-color: #77dada;
+    padding: 11px 17px 11px 17px;
+    color: #0e4f4f;
+    margin-left: auto;
+}
+
+.btn-contact:hover {
+    background-color: #0e4f4f;
+    border-color: #0e4f4f;
+}
+
+.video-box {
+    height: 780px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0px;
+    box-shadow: rgba(16, 24, 40, 0.06) 0px 1px 2px 0px, rgba(16, 24, 40, 0.1) 0px 1px 3px 0px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
