@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
           integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-
+    <script src="sctrip.js"></script>
     <title>MIXI VIVU 2023</title>
 </head>
 
@@ -48,7 +48,6 @@
         <video src="Mixivivu.mp4" autoplay muted loop></video>
     </div>
 
-
     <div class="row">
         <div class="col-md-10 mx-auto">
             <div class="square-box" style="margin-top: -10%; height: 200px;">
@@ -58,30 +57,24 @@
                 <div class="row g-3 justify-content-center align-items-center">
                     <div class="col-md-3">
                         <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="bi bi-search icon-gray"></i>
-                        </span>
+                            <span class="input-group-text">  <i class="bi bi-search icon-gray"></i>    </span>
                             <input type="text" class="form-control" placeholder="Tìm kiếm">
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="bi bi-geo-alt icon-gray"></i>
-                        </span>
+                            <span class="input-group-text">  <i class="bi bi-geo-alt icon-gray"></i>   </span>
                             <select class="form-select">
                                 <option value="" selected>Địa điểm</option>
-                                <!-- Thêm các option cho combobox địa điểm -->
+
                             </select>
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="bi bi-currency-dollar icon-gray"></i>
-                        </span>
+                            <span class="input-group-text">  <i class="bi bi-currency-dollar icon-gray"></i>   </span>
                             <select class="form-select">
                                 <option value="" selected>Mức giá</option>
                                 <!-- Thêm các option cho combobox mức giá -->
@@ -91,7 +84,8 @@
 
                     <div class="col-md-2">
                         <button class="btn btn-primary">
-                            <i class="bi bi-search icon-gray"></i> Tìm kiếm
+<!--                            <i class="bi bi-search icon-gray"></i> -->
+                            Tìm kiếm
                         </button>
                     </div>
                 </div>
@@ -117,11 +111,11 @@
             <div class="col-md-4">
                 <div class="square-box">
                     <div class="position-relative">
-                        <img src="https://minio.fares.vn/mixivivu-dev/tour/du-thuyen-heritage-binh-chuan-cat-ba/thumbnail/no53ab0y526yl825.webp"
+                        <img src="img/box1.webp"
                              alt="Ảnh chiếm 50% phần trên của box" class="w-100 rounded-top">
-                        <div class="position-absolute top-0 start-0 p-2">
+                        <div class="position-absolute top-0 start-0 ">
                             <span class="bi bi-star-fill text-warning"></span>
-                            <label class="xs text-warning" style="background: #fedf89">5 (0) đánh giá</label>
+                            <label class="xs">5 (0) đánh giá</label>
                         </div>
                     </div>
                     <!-- Nội dung khác của bạn -->
@@ -130,21 +124,72 @@
 
 
             <div class="col-md-4">
-                <div class="square-box"></div>
+                <div class="square-box">
+                    <div class="position-relative">
+                        <img src="img/box2.jpg"
+                             alt="Ảnh chiếm 50% phần trên của box" class="w-100 rounded-top">
+                        <div class="position-absolute top-0 start-0 ">
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <label class="xs">5 (0) đánh giá</label>
+                        </div>
+                    </div>
+                    <!-- Nội dung khác của bạn -->
+                </div>
             </div>
+
             <div class="col-md-4">
-                <div class="square-box"></div>
+                <div class="square-box">
+                    <div class="position-relative">
+                        <img src="img/box3.jpg"
+                             alt="Ảnh chiếm 50% phần trên của box" class="w-100 rounded-top">
+                        <div class="position-absolute top-0 start-0 ">
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <label class="xs">5 (0) đánh giá</label>
+                        </div>
+                    </div>
+                    <!-- Nội dung khác của bạn -->
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="square-box"></div>
+                <div class="square-box">
+                    <div class="position-relative">
+                        <img src="img/box4.webp"
+                             alt="Ảnh chiếm 50% phần trên của box" class="w-100 rounded-top">
+                        <div class="position-absolute top-0 start-0">
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <label class="xs">5 (0) đánh giá</label>
+                        </div>
+                    </div>
+                    <!-- Nội dung khác của bạn -->
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="square-box"></div>
+                <div class="square-box">
+                    <div class="position-relative">
+                        <img src="img/box5.webp"
+                             alt="Ảnh chiếm 50% phần trên của box" class="w-100 rounded-top">
+                        <div class="position-absolute top-0 start-0 ">
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <label class="xs">5 (0) đánh giá</label>
+                        </div>
+                    </div>
+                    <!-- Nội dung khác của bạn -->
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="square-box"></div>
+                <div class="square-box">
+                    <div class="position-relative">
+                        <img src="img/box6.webp"
+                             alt="Ảnh chiếm 50% phần trên của box" class="w-100 rounded-top">
+                        <div class="position-absolute top-0 start-0 ">
+                            <span class="bi bi-star-fill text-warning"></span>
+                            <label class="xs">5 (0) đánh giá</label>
+                        </div>
+                    </div>
+                    <!-- Nội dung khác của bạn -->
+                </div>
             </div>
         </div>
 
