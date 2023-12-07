@@ -105,6 +105,26 @@ video {
     .navbar-brand {
         /*margin-right: -100px;*/
     }
+    .container .navbar-brand{
+        height: 100px;
+        width: 125px;
+        margin-left: -80px;
+    }
+    .container .btn-outline-primary {
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        margin-left: 3px;
+    }
+    ul.navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 120px;
+    }
+
+
 }
 
 .position-absolute {
