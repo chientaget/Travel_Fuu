@@ -95,7 +95,7 @@ footer {
     padding: 20px 0; /* Khoảng cách padding */
 }
 
-.col-md-3 {
+#row-footer .col-md-3 {
     margin-top: 64px;
     margin-bottom: 48px;
     margin-left: -30px;
