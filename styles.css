@@ -88,3 +88,34 @@ video {
     object-fit: cover;
 
 }
+
+/* CSS để làm đẹp lại chân trang */
+footer {
+    background-color: #101828; /* Màu nền */
+    padding: 20px 0; /* Khoảng cách padding */
+}
+
+.col-md-3 {
+    margin-top: 64px;
+    margin-bottom: 48px;
+    margin-left: -30px;
+    color: #98a2b3;
+}
+
+#col1 {
+    margin-right: 100px;
+}
+
+ul {
+    list-style: none; /* Loại bỏ dấu chấm trong danh sách */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+a {
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    color: #007bff; /* Màu cho liên kết */
+}
