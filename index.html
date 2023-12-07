@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
           integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/logovivavivu.png">
+    <meta property="og:image" content="/logotravel.png"/>
     <script src="sctrip.js"></script>
-    <meta property="og:image" content="img/logotravel.svg">
     <title>Travel Fuu</title>
 </head>
-
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Eleventh navbar example">
     <div class="container">
         <img class="navbar-brand" src="img/logotravel.svg" width="180"/>
+
+        <!-- Liên hệ Travel Fuu button visible on mobile -->
+        <button class="btn btn-outline-primary my-2 my-sm-0 btn-contact d-lg-none">
+            <b>Liên hệ Travel Fuu</b>
+        </button>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,8 +39,11 @@
                 <li class="nav-item"><b class="nav-link" href="#">Blog</b></li>
 
             </ul>
-            <form class="ms-auto">
-                <button class="btn btn-outline-primary my-2 my-sm-0 btn-contact" type="button"><b>Liên hệ Travel Fuu</b>
+
+            <!-- Liên hệ Travel Fuu button visible on desktop -->
+            <form class="ms-auto d-none d-lg-block">
+                <button class="btn btn-outline-primary my-2 my-sm-0 btn-contact">
+                    <b>Liên hệ Travel Fuu</b>
                 </button>
             </form>
         </div>
@@ -44,58 +53,60 @@
 
 <div class="container">
 
-
     <div class="video-box">
         <video src="Mixivivu.mp4" autoplay muted loop></video>
-    </div>
 
-    <div class="row">
-        <div class="col-md-10 mx-auto">
-            <div class="square-box" style="margin-top: -10%; height: 200px;">
-                <h2 class="text-center mb-3">Bạn lựa chọn du thuyền Hạ Long nào?</h2>
-                <p class="text-center mb-3">Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn</p>
+        <div class="row">
+            <div class="col-md-7 mx-auto centered-box">
+                <div class="square-box" style="margin-top: -5%; height: 200px; position : absolute; ">
+                    <h2 class="text-center mb-3">Bạn lựa chọn du thuyền Hạ Long nào?</h2>
+                    <p class="text-center mb-3">Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn</p>
 
-                <div class="row g-3 justify-content-center align-items-center">
-                    <div class="col-md-3">
-                        <div class="input-group">
-                            <span class="input-group-text">  <i class="bi bi-search icon-gray"></i>    </span>
-                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    <div class="row g-3 justify-content-center align-items-center">
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <span class="input-group-text">  <i class="bi bi-search icon-gray"></i>    </span>
+                                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-3">
-                        <div class="input-group">
-                            <span class="input-group-text">  <i class="bi bi-geo-alt icon-gray"></i>   </span>
-                            <select class="form-select">
-                                <option value="" selected>Địa điểm</option>
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <span class="input-group-text">  <i class="bi bi-geo-alt icon-gray"></i>   </span>
+                                <select class="form-select">
+                                    <option value="" selected>Địa điểm</option>
 
-                            </select>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-3">
-                        <div class="input-group">
-                            <span class="input-group-text">  <i class="bi bi-currency-dollar icon-gray"></i>   </span>
-                            <select class="form-select">
-                                <option value="" selected>Mức giá</option>
-                                <!-- Thêm các option cho combobox mức giá -->
-                            </select>
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <span class="input-group-text">  <i
+                                        class="bi bi-currency-dollar icon-gray"></i>   </span>
+                                <select class="form-select">
+                                    <option value="" selected>Mức giá</option>
+                                    <!-- Thêm các option cho combobox mức giá -->
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-2">
-                        <button class="btn btn-primary">
-                            <!--    <i class="bi bi-search icon-gray"></i> -->
-                            <b> Tìm kiếm </b>
-                        </button>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary">
+                                <!--    <i class="bi bi-search icon-gray"></i> -->
+                                <b> Tìm kiếm </b>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <br> <br> <br> <br><br> <br>
     <div class="row">
 
+        <!-- Content -->
         <div class="row justify-content-center">
             <div class="col-md-7">
                 <h4 style="font-size: 36px; font-family: Archivo, sans-serif ,bold; ">Du thuyền mới <br>và phổ biến nhất
@@ -107,6 +118,7 @@
                     trình tuyệt vời đưa bạn vào thế giới của sự sang trọng, tiện nghi và trải nghiệm không thể quên.</p>
             </div>
         </div>
+
         <div class="row">
             <!-- box1-->
             <div class="col-md-4">
@@ -148,7 +160,6 @@
 
                 </div>
             </div>
-
             <!-- box2-->
             <div class="col-md-4">
                 <div class="square-box">
@@ -227,8 +238,6 @@
 
                 </div>
             </div>
-
-
         </div>
 
         <div class="row">
@@ -296,7 +305,7 @@
 
                         <!-- Div chứa icon tàu du lịch và chữ "Hạ thuỷ 2019 - Tàu vỏ Kim loại - 20 phòng" -->
                         <div class="ship-info">
-                            <!--                            <img src="img/cruise.png"/>-->
+                            <!--  <img src="img/cruise.png"/>-->
                             <h6 class="thongtin">Hạ thuỷ 2019 - Tàu vỏ Kim loại - 22 phòng</h6>
                         </div>
 
@@ -352,8 +361,9 @@
 
                 </div>
             </div>
-
         </div>
+
+
     </div>
 </div>
 
@@ -363,9 +373,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="row" id="row-footer">
-                    <div class="col-md-3">
+                    <div class="col-md-3" style="margin-right: 50px;">
                         <img src="img/logotravel.svg" width="350" alt=""> <br> <br>
-                        <p class="md" style="  color: #475467;">Travel Fuu - đối tác tin cậy của các hãng du thuyền lớn,
+                        <p class="md" style="color: #475467; ">Travel Fuu - đối tác tin cậy của các hãng du thuyền lớn,
                             mang đến cho bạn chương trình ưu đãi độc quyền cho tour du thuyền Hạ Long. Khám phá Hạ Long
                             vớiTravel Fuu - trải nghiệm du thuyền đẳng cấp và nhận những ưu đãi đặc biệt từ chúng
                             tôi.</p>
@@ -392,7 +402,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <ul>
                             <li><b style="color: #667085">DU THUYỀN</b></li>
                             <li><b>Blog</b></li>
@@ -410,6 +420,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
 </body>
 </html>
