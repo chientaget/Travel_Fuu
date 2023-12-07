@@ -105,11 +105,13 @@ video {
     .navbar-brand {
         /*margin-right: -100px;*/
     }
-    .container .navbar-brand{
+
+    .container .navbar-brand {
         height: 100px;
         width: 125px;
         margin-left: -80px;
     }
+
     .container .btn-outline-primary {
         font-size: 11px;
         display: flex;
@@ -118,6 +120,7 @@ video {
         height: 30px;
         margin-left: 3px;
     }
+
     ul.navbar-nav {
         display: flex;
         justify-content: flex-end;
@@ -224,4 +227,19 @@ a {
 .btn-primary:hover {
     background-color: var(--text-color);
     border-color: var(--text-color);
+}
+
+.row_viewAll {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn-viewAll {
+    border: solid 1px;
+    border-radius: 32px;
+    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+    width: 100%;
+    text-align: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
 }
