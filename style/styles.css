@@ -101,15 +101,37 @@ video {
         z-index: -1;
         top: -50px;
     }
+    .navbar {
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn-contact {
+        /* Add any custom styling for your contact button */
+    }
+
+    .navbar .navbar-expand-lg {
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+    }
 
     .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
         border: none;
         outline: none;
         box-shadow: none;
     }
+
     .navbar-collapse {
         text-align: left;
     }
+
     .navbar-nav {
         margin-left: auto;
         margin-right: auto;
@@ -117,6 +139,12 @@ video {
         table-layout: fixed;
         float: none;
     }
+    .btn-contact h7 {
+        margin: 0;  /* Remove any default margin */
+        white-space: nowrap;  /* Prevent text from wrapping */
+    }
+
+
     .video-box {
         position: relative;
         overflow: hidden;
@@ -130,7 +158,7 @@ video {
     }
 
     .navbar {
-        text-align: center;
+        /*text-align: center;*/
         background-color: white;
         border-bottom: 1px inset;
         border-radius: 0;
