@@ -102,6 +102,12 @@ video {
         top: -50px;
     }
 
+     .navbar-toggler:focus {
+         border: rgba(71, 84, 103, 0.82) solid 1px;
+         outline: none;
+         box-shadow: none;
+    }
+
     .video-box {
         position: relative;
         overflow: hidden;
@@ -116,15 +122,9 @@ video {
 
     .navbar {
         text-align: center;
-        padding-left: 0%;
         background-color: white;
         border-bottom: 1px inset;
         border-radius: 0;
-
-    }
-
-    .container .navbar-brand {
-
     }
 
     .container .btn-outline-primary {
@@ -133,7 +133,7 @@ video {
         justify-content: center;
         align-items: center;
         height: 30px;
-        margin-right: 5%;
+        border-radius: 100px;
     }
 
     ul.navbar-nav {
