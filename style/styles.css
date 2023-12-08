@@ -102,12 +102,21 @@ video {
         top: -50px;
     }
 
-    .navbar-toggler:focus ,.navbar-toggler:active {
+    .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
         border: none;
         outline: none;
         box-shadow: none;
     }
-
+    .navbar-collapse {
+        text-align: left;
+    }
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+        table-layout: fixed;
+        float: none;
+    }
     .video-box {
         position: relative;
         overflow: hidden;
@@ -139,7 +148,7 @@ video {
     ul.navbar-nav {
         display: flex;
         justify-content: flex-end;
-        margin-left: 80px;
+        /*margin-left: 80px;*/
     }
 
 
