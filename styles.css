@@ -250,17 +250,11 @@ a {
 .row-feedback {
     font-size: 16px;
     border-radius: 32px;
-    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
     width: 100%;
     color: #101828;
-    padding-top: 2%;
-    padding-bottom: 5%;
-
+    padding: 2% 2% 4%;
     margin-bottom: 5%;
-
-    padding-left: 5%;
-    padding-right: 5%;
-
     background-color: #f3ffff;
 }
 
@@ -292,15 +286,15 @@ a {
 .row-toLocation {
     font-size: 16px;
     border-radius: 32px;
-    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+    /*box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;*/
     width: 100%;
     color: #101828;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    /*padding-top: 5%;*/
+    /*padding-bottom: 5%;*/
 }
 
 .row-toLocation .col-md-8.row-toLocation {
-    background-color: rgba(0, 123, 255, 0.25);
+    /*background-color: rgba(0, 123, 255, 0.25);*/
 }
 .btn_viewNgay{
     border: rgba(29, 41, 57, 0.51) solid 1px;
@@ -309,4 +303,13 @@ a {
 }
  .row-toLocation .square-box{
     height: 382px;
+}
+
+ .section-bg{
+     background-color: #f2f4f7;
+     padding: 2% 2% 4%;
+ }
+.section-bg .row-two{
+    padding-left: 5%;
+    padding-right: 5%;
 }
