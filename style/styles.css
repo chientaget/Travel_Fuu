@@ -102,7 +102,7 @@ video {
         top: -50px;
     }
 
-    .navbar-toggler:focus {
+    .navbar-toggler:focus ,.navbar-toggler:active {
         border: none;
         outline: none;
         box-shadow: none;
