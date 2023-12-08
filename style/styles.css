@@ -10,7 +10,7 @@ body {
 }
 
 link[rel="icon"] {
-    border-radius: 50%; /* hoặc giá trị khác tùy thuộc vào ý muốn của bạn */
+    border-radius: 50%;
 }
 
 .btn:active {
@@ -22,9 +22,12 @@ link[rel="icon"] {
 /* Navbar Styles */
 .navbar {
     text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 100px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 5%;
+    background-color: white;
+    border-bottom: 1px inset;
+    border-radius: 0;
 }
 
 .navbar-brand {
@@ -221,8 +224,7 @@ a {
 }
 
 /* General Button Styles */
-.btn-contact,
-.btn-primary {
+.btn-contact, .btn-primary {
     border-radius: 100px;
     box-shadow: rgba(16, 24, 40, 0.05) 0 1px 2px 0;
     background-color: var(--primary-color);
@@ -232,10 +234,10 @@ a {
     margin-left: auto;
 }
 
-.btn-contact:hover,
-.btn-primary:hover {
-    background-color: var(--text-color);
-    border-color: var(--text-color);
+.btn-contact:hover, .btn-contact:active, .btn-contact:focus,
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: var(--text-color) !important;
+    border-color: var(--text-color) !important;
 }
 
 .row_viewAll {
