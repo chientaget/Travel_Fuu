@@ -102,10 +102,10 @@ video {
         top: -50px;
     }
 
-     .navbar-toggler:focus {
-         border: rgba(71, 84, 103, 0.82) solid 1px;
-         outline: none;
-         box-shadow: none;
+    .navbar-toggler:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
     }
 
     .video-box {
