@@ -480,11 +480,17 @@ a {
 .noidung {
     padding-left: 5%;
     padding-right: 5%;
+    max-height: 2.8em; /* Đặt giá trị tối đa 2 dòng */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .row-toLocation .float-start {
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 3%;
+    font-size: 14px;
 }
 
 /*trang tìm du thuyền*/

@@ -5,16 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch('index.html')
             .then(response => response.text())
             .then(data => {
-                const navbar = data.match(/<nav(.*?)<\/nav>/s)[0];
-                const footer = data.match(/<footer(.*?)<\/footer>/s)[0];
+                    const navbar = data.match(/<nav(.*?)<\/nav>/s)[0];
+                    const footer = data.match(/<footer(.*?)<\/footer>/s)[0];
 
-                // Kiểm tra xem Navbar và Footer đã được thêm vào trang chưa
-                if (!document.querySelector('.navbar') && !document.querySelector('footer')) {
-                    // Insert Navbar và Footer vào trang
-                    document.body.insertAdjacentHTML('afterbegin', navbar);
-                    document.body.insertAdjacentHTML('beforeend', footer);
+                    // Kiểm tra xem Navbar và Footer đã được thêm vào trang chưa
+                    if (!document.querySelector('.navbar') && !document.querySelector('footer')) {
+                        // Insert Navbar và Footer vào trang
+                        document.body.insertAdjacentHTML('afterbegin', navbar);
+                        document.body.insertAdjacentHTML('beforeend', footer);
+                    }
                 }
-            });
+            )
+        ;
     }
 
     // Load Navbar và Footer on each page
