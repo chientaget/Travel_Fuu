@@ -39,4 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (document.body.classList.contains('blog')) {
         // Your code for Blog.html
     }
+    if (document.body.classList.contains('lien_he')) {
+
+    }
 });

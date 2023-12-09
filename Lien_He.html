@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+          integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/logovivavivu.png">
+
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="script.js"></script>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .full-height {
+            height: 100%;
+        }
+
+        /* Đặt chiều cao của iframe là 100% và không có đường biên */
+        #map-iframe {
+            height: 75%;
+        }
+
+        .form-control {
+            border-radius: 100px;
+            box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+        }
+
+        #inputs {
+            border-radius: 20px;
+            height: 200px;
+        }
+    </style>
+    <title>Liên Hệ</title>
+</head>
+<body>
+
+
+<div class="container-fluid full-height">
+    <iframe id="map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.816939728028!2d105.73938337597839!3d21.04000948061216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1702092923554!5m2!1svi!2s"
+            width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+<div class="container">
+    <div class="row" style="margin-top: -30%">
+        <div class="col-md-12 mx-auto">
+            <div class="square-box mx-auto mt-n3" style="max-width: 80%; padding: 5% 10% 10% 10%; ">
+                <h2 class="text-center mb-8">Khám phá Hạ Long thông qua Du thuyền</h2>
+                <p class="text-center mb-8">
+                    Khám phá Hạ Long qua Du thuyền cùng Mixivivu - Hãy liên hệ ngay để trải
+                    nghiệm hành trình tuyệt vời!
+                </p>
+
+                <!-- Form -->
+                <form>
+                    <!-- Hàng ngang 1: Nhập tên -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nhập tên">
+                        </div>
+                    </div>
+
+                    <!-- Hàng ngang 2: Email và Số điện thoại (50/50) -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <input type="tel" class="form-control" placeholder="Số điện thoại">
+                        </div>
+                    </div>
+
+                    <!-- Hàng ngang 3: Nội dung -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <textarea class="form-control" id="inputs" rows="3" placeholder="Nội dung"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Hàng ngang 4: Nút Liên hệ với Travel Fuu -->
+                    <div class="col-md-12 mb-3 d-flex">
+                        <button class="btn btn-primary btn-lg flex-grow-1 d-flex justify-content-between align-items-center">
+                            <span class="d-flex align-items-center"
+                                  style="padding-left: 40%">Liên hệ với Travel Fuu</span>
+                        </button>
+                    </div>
+
+                </form>
+                <!-- End Form -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
