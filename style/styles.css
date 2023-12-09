@@ -163,7 +163,7 @@ video {
 
 .input-timkiem {
     position: relative;
-    padding: 6% 15%;
+    padding: 5% 3%;
     border-radius: 100px;
     border: 1px solid var(--gray-200);
     box-shadow: var(--shadow-xs);
@@ -358,6 +358,7 @@ a {
     position: absolute;
     bottom: -20px;
     right: 0;
+
 }
 
 .price {
