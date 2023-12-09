@@ -566,7 +566,7 @@ a {
     padding: 1%;
     border: 1px solid var(--gray-200);
     box-shadow: rgba(16, 24, 40, 0.03) 0px 8px 8px -4px, rgba(16, 24, 40, 0.08) 0px 20px 24px -4px;
-
+    width: 130%;
 }
 
 /*hide the items when the select box is closed:*/
