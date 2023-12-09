@@ -79,13 +79,23 @@
 }
 
 /* Áp dụng cho input, select, textarea khi được focus */
-input:focus-within, select:focus-within, textarea:focus-within {
+input:focus-within,
+select:focus-within,
+textarea:focus-within,
+.input:focus-within {
     border: 1px solid #77dada !important;
     box-shadow: 0 0 0 4px #caf8f8 !important;
 }
 
 /* Áp dụng cho button khi được focus */
 button:focus-within {
+    border: 1px solid #77dada !important;
+    box-shadow: 0 0 0 4px #caf8f8 !important;
+}
+
+/* Áp dụng cho custom-select khi active hoặc focus-within */
+.custom-select:active,
+.custom-select:focus-within {
     border: 1px solid #77dada !important;
     box-shadow: 0 0 0 4px #caf8f8 !important;
 }
@@ -151,6 +161,16 @@ video {
     object-fit: cover;
 }
 
+.input-timkiem {
+    position: relative;
+    padding: 6% 15%;
+    border-radius: 100px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 /* Square Box Styles */
 .square-box {
@@ -480,3 +500,73 @@ a {
     margin-right: 3%;
 }
 
+
+.custom-select {
+    position: relative;
+    border-radius: 100px;
+    border: 1px solid var(--gray-200);
+    padding: 1%;
+    background-color: transparent;
+    margin-right: 1%;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: #ffffff;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    /*border: 6px solid transparent;*/
+    /*border-color: #fff transparent transparent transparent;*/
+
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    /*border: 1px solid transparent;*/
+    /*border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;*/
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 10px;
+    padding: 1%;
+    border: 1px solid var(--gray-200);
+    box-shadow: rgba(16, 24, 40, 0.03) 0px 8px 8px -4px, rgba(16, 24, 40, 0.08) 0px 20px 24px -4px;
+
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
