@@ -1,9 +1,12 @@
-@charset "UTF-8";@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");:root {
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
     --base-white: #fff;
     --black: #000;
     --primary-light: #caf8f8;
     --primary-base: #77dada;
-    --primary-dark: #0e4f4f;
+    --primary-dark: #000000;
     --gray-50: #f9fafb;
     --gray-100: #f2f4f7;
     --gray-200: #eaecf0;
@@ -27,7 +30,7 @@
     --infomation-base: #356ad1;
     --infomation-dark: #003074;
     --shadow-xs: 0px 1px 2px 0px #1018280d;
-    --shadow-sm: 0px 1px 2px 0px rgba(16,24,40,.06),0px 1px 3px 0px rgba(16,24,40,.1)
+    --shadow-sm: 0px 1px 2px 0px rgba(16, 24, 40, .06), 0px 1px 3px 0px rgba(16, 24, 40, .1)
 }
 
 html {
@@ -35,7 +38,7 @@ html {
 }
 
 * {
-    font-family: Archivo,sans-serif;
+    font-family: Archivo, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0
@@ -50,7 +53,7 @@ h1 {
     line-height: 90px
 }
 
-h1,h2 {
+h1, h2 {
     font-weight: 700
 }
 
@@ -70,9 +73,9 @@ h4 {
     line-height: 44px
 }
 
-h4,h5 {
+h4, h5 {
     font-weight: 700;
-    color: var(--gray-900,#101828)
+    color: var(--gray-900, #101828)
 }
 
 h5 {
@@ -87,7 +90,7 @@ h6 {
 }
 
 .subheading {
-    color: var(--gray-700,#344054)
+    color: var(--gray-700, #344054)
 }
 
 .subheading.lg {
@@ -177,23 +180,23 @@ p.xl {
     line-height: 30px
 }
 
-p.lg,p.xl {
+p.lg, p.xl {
     font-weight: 400
 }
 
 p.lg {
     font-size: 18px;
     line-height: 28px;
-    color: var(--gray-900,#101828)
+    color: var(--gray-900, #101828)
 }
 
 p.md {
     font-size: 16px;
     line-height: 24px;
-    color: var(--gray-600,#475467)
+    color: var(--gray-600, #475467)
 }
 
-p.md,p.sm {
+p.md, p.sm {
     font-weight: 400
 }
 
@@ -207,7 +210,7 @@ p.sm {
     line-height: 30px
 }
 
-.p-lg,.p-xl {
+.p-lg, .p-xl {
     font-weight: 400
 }
 
@@ -221,7 +224,7 @@ p.sm {
     line-height: 24px
 }
 
-.p-md,.p-sm {
+.p-md, .p-sm {
     font-weight: 400
 }
 
@@ -286,7 +289,7 @@ button:focus {
 
 @media only screen and (max-width: 1280px) {
     .container {
-        padding:0 8px
+        padding: 0 8px
     }
 }
 
@@ -351,15 +354,15 @@ button:focus {
 }
 
 .grid-cols-2 {
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(2, 1fr)
 }
 
 .grid-cols-3 {
-    grid-template-columns: repeat(3,1fr)
+    grid-template-columns: repeat(3, 1fr)
 }
 
 .grid-cols-4 {
-    grid-template-columns: repeat(4,1fr)
+    grid-template-columns: repeat(4, 1fr)
 }
 
 .gap-1 {
@@ -499,16 +502,16 @@ label {
 }
 
 .popup-content {
-    width: -moz-fit-content!important;
-    width: fit-content!important;
-    border: none!important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    border: none !important;
     border-radius: 24px;
-    border: 1px solid var(--gray-200,#eaecf0);
-    background: var(--base-white,#fff)!important;
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff) !important;
     box-shadow: var(--shadow-sm);
     padding: 0;
-    animation: anvil .3s cubic-bezier(.38,.1,.36,.9) forwards;
-    -webkit-animation: anvil .3s cubic-bezier(.38,.1,.36,.9) forwards
+    animation: anvil .3s cubic-bezier(.38, .1, .36, .9) forwards;
+    -webkit-animation: anvil .3s cubic-bezier(.38, .1, .36, .9) forwards
 }
 
 .popup-overlay {
@@ -518,7 +521,7 @@ label {
 .error {
     margin-top: 6px;
     margin-left: 6px;
-    color: var(--error-base,#f04438);
+    color: var(--error-base, #f04438);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px
@@ -528,23 +531,23 @@ label {
     0% {
         transform: scale(1) translateY(0);
         opacity: 0;
-        box-shadow: 0 0 0 hsla(0,0%,95%,0)
+        box-shadow: 0 0 0 hsla(0, 0%, 95%, 0)
     }
 
     1% {
         transform: scale(.96) translateY(10px);
         opacity: 0;
-        box-shadow: 0 0 0 hsla(0,0%,95%,0)
+        box-shadow: 0 0 0 hsla(0, 0%, 95%, 0)
     }
 
     to {
         transform: scale(1) translateY(0);
         opacity: 1;
-        box-shadow: 0 0 500px hsla(0,0%,95%,0)
+        box-shadow: 0 0 500px hsla(0, 0%, 95%, 0)
     }
 }
 
-#features,#intro,#map,#review-submit,#reviews,#rooms,#rules {
+#features, #intro, #map, #review-submit, #reviews, #rooms, #rules {
     scroll-margin-top: 150px
 }
 
@@ -553,7 +556,7 @@ label {
 }
 
 figure {
-    max-height: none!important
+    max-height: none !important
 }
 
 .popup-content {
@@ -566,12 +569,12 @@ figure {
 
 [role=tooltip].popup-content {
     width: 200px;
-    box-shadow: 0 0 3px rgba(0,0,0,.16);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .16);
     border-radius: 5px
 }
 
 .popup-overlay {
-    background: rgba(0,0,0,.5)
+    background: rgba(0, 0, 0, .5)
 }
 
 [data-popup=tooltip].popup-overlay {
@@ -579,7 +582,7 @@ figure {
 }
 
 .popup-arrow {
-    filter: drop-shadow(0 -3px 3px rgba(0,0,0,.16));
+    filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));
     color: #fff;
     stroke-width: 2px;
     stroke: #d7d7d7;
@@ -598,7 +601,7 @@ figure {
     --toastify-color-success: #07bc0c;
     --toastify-color-warning: #f1c40f;
     --toastify-color-error: #e74c3c;
-    --toastify-color-transparent: hsla(0,0%,100%,.7);
+    --toastify-color-transparent: hsla(0, 0%, 100%, .7);
     --toastify-icon-color-info: var(--toastify-color-info);
     --toastify-icon-color-success: var(--toastify-color-success);
     --toastify-icon-color-warning: var(--toastify-color-warning);
@@ -617,7 +620,7 @@ figure {
     --toastify-text-color-error: #fff;
     --toastify-spinner-color: #616161;
     --toastify-spinner-color-empty-area: #e0e0e0;
-    --toastify-color-progress-light: linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);
+    --toastify-color-progress-light: linear-gradient(90deg, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
     --toastify-color-progress-dark: #bb86fc;
     --toastify-color-progress-info: var(--toastify-color-info);
     --toastify-color-progress-success: var(--toastify-color-success);
@@ -669,18 +672,18 @@ figure {
 
 @media only screen and (max-width: 480px) {
     .Toastify__toast-container {
-        width:100vw;
+        width: 100vw;
         padding: 0;
         left: 0;
         margin: 0
     }
 
-    .Toastify__toast-container--top-center,.Toastify__toast-container--top-left,.Toastify__toast-container--top-right {
+    .Toastify__toast-container--top-center, .Toastify__toast-container--top-left, .Toastify__toast-container--top-right {
         top: 0;
         transform: translateX(0)
     }
 
-    .Toastify__toast-container--bottom-center,.Toastify__toast-container--bottom-left,.Toastify__toast-container--bottom-right {
+    .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-right {
         bottom: 0;
         transform: translateX(0)
     }
@@ -698,7 +701,7 @@ figure {
     margin-bottom: 1rem;
     padding: 8px;
     border-radius: 4px;
-    box-shadow: 0 1px 10px 0 rgba(0,0,0,.1),0 2px 15px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1), 0 2px 15px 0 rgba(0, 0, 0, .05);
     display: flex;
     justify-content: space-between;
     max-height: var(--toastify-toast-max-height);
@@ -725,13 +728,14 @@ figure {
     align-items: center
 }
 
-.Toastify__toast-body>div:last-child {
+.Toastify__toast-body > div:last-child {
     word-break: break-word;
     flex: 1 1
 }
 
 .Toastify__toast-icon {
-    margin-inline-end:10px;width: 20px;
+    margin-inline-end: 10px;
+    width: 20px;
     flex-shrink: 0;
     display: flex
 }
@@ -748,7 +752,7 @@ figure {
 
 @media only screen and (max-width: 480px) {
     .Toastify__toast {
-        margin-bottom:0;
+        margin-bottom: 0;
         border-radius: 0
     }
 }
@@ -758,7 +762,7 @@ figure {
     color: var(--toastify-text-color-dark)
 }
 
-.Toastify__toast-theme--colored.Toastify__toast--default,.Toastify__toast-theme--light {
+.Toastify__toast-theme--colored.Toastify__toast--default, .Toastify__toast-theme--light {
     background: var(--toastify-color-light);
     color: var(--toastify-text-color-light)
 }
@@ -807,7 +811,7 @@ figure {
     background: var(--toastify-color-progress-error)
 }
 
-.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning {
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--info, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning {
     background: var(--toastify-color-transparent)
 }
 
@@ -828,13 +832,13 @@ figure {
     opacity: .3
 }
 
-.Toastify__close-button>svg {
+.Toastify__close-button > svg {
     fill: currentColor;
     height: 16px;
     width: 14px
 }
 
-.Toastify__close-button:focus,.Toastify__close-button:hover {
+.Toastify__close-button:focus, .Toastify__close-button:hover {
     opacity: 1
 }
 
@@ -884,26 +888,26 @@ figure {
 }
 
 @keyframes Toastify__bounceInRight {
-    0%,60%,75%,90%,to {
-        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    0%, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
     }
 
     0% {
         opacity: 0;
-        transform: translate3d(3000px,0,0)
+        transform: translate3d(3000px, 0, 0)
     }
 
     60% {
         opacity: 1;
-        transform: translate3d(-25px,0,0)
+        transform: translate3d(-25px, 0, 0)
     }
 
     75% {
-        transform: translate3d(10px,0,0)
+        transform: translate3d(10px, 0, 0)
     }
 
     90% {
-        transform: translate3d(-5px,0,0)
+        transform: translate3d(-5px, 0, 0)
     }
 
     to {
@@ -914,36 +918,36 @@ figure {
 @keyframes Toastify__bounceOutRight {
     20% {
         opacity: 1;
-        transform: translate3d(-20px,0,0)
+        transform: translate3d(-20px, 0, 0)
     }
 
     to {
         opacity: 0;
-        transform: translate3d(2000px,0,0)
+        transform: translate3d(2000px, 0, 0)
     }
 }
 
 @keyframes Toastify__bounceInLeft {
-    0%,60%,75%,90%,to {
-        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    0%, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
     }
 
     0% {
         opacity: 0;
-        transform: translate3d(-3000px,0,0)
+        transform: translate3d(-3000px, 0, 0)
     }
 
     60% {
         opacity: 1;
-        transform: translate3d(25px,0,0)
+        transform: translate3d(25px, 0, 0)
     }
 
     75% {
-        transform: translate3d(-10px,0,0)
+        transform: translate3d(-10px, 0, 0)
     }
 
     90% {
-        transform: translate3d(5px,0,0)
+        transform: translate3d(5px, 0, 0)
     }
 
     to {
@@ -954,36 +958,36 @@ figure {
 @keyframes Toastify__bounceOutLeft {
     20% {
         opacity: 1;
-        transform: translate3d(20px,0,0)
+        transform: translate3d(20px, 0, 0)
     }
 
     to {
         opacity: 0;
-        transform: translate3d(-2000px,0,0)
+        transform: translate3d(-2000px, 0, 0)
     }
 }
 
 @keyframes Toastify__bounceInUp {
-    0%,60%,75%,90%,to {
-        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    0%, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
     }
 
     0% {
         opacity: 0;
-        transform: translate3d(0,3000px,0)
+        transform: translate3d(0, 3000px, 0)
     }
 
     60% {
         opacity: 1;
-        transform: translate3d(0,-20px,0)
+        transform: translate3d(0, -20px, 0)
     }
 
     75% {
-        transform: translate3d(0,10px,0)
+        transform: translate3d(0, 10px, 0)
     }
 
     90% {
-        transform: translate3d(0,-5px,0)
+        transform: translate3d(0, -5px, 0)
     }
 
     to {
@@ -993,41 +997,41 @@ figure {
 
 @keyframes Toastify__bounceOutUp {
     20% {
-        transform: translate3d(0,-10px,0)
+        transform: translate3d(0, -10px, 0)
     }
 
-    40%,45% {
+    40%, 45% {
         opacity: 1;
-        transform: translate3d(0,20px,0)
+        transform: translate3d(0, 20px, 0)
     }
 
     to {
         opacity: 0;
-        transform: translate3d(0,-2000px,0)
+        transform: translate3d(0, -2000px, 0)
     }
 }
 
 @keyframes Toastify__bounceInDown {
-    0%,60%,75%,90%,to {
-        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    0%, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
     }
 
     0% {
         opacity: 0;
-        transform: translate3d(0,-3000px,0)
+        transform: translate3d(0, -3000px, 0)
     }
 
     60% {
         opacity: 1;
-        transform: translate3d(0,25px,0)
+        transform: translate3d(0, 25px, 0)
     }
 
     75% {
-        transform: translate3d(0,-10px,0)
+        transform: translate3d(0, -10px, 0)
     }
 
     90% {
-        transform: translate3d(0,5px,0)
+        transform: translate3d(0, 5px, 0)
     }
 
     to {
@@ -1037,25 +1041,25 @@ figure {
 
 @keyframes Toastify__bounceOutDown {
     20% {
-        transform: translate3d(0,10px,0)
+        transform: translate3d(0, 10px, 0)
     }
 
-    40%,45% {
+    40%, 45% {
         opacity: 1;
-        transform: translate3d(0,-20px,0)
+        transform: translate3d(0, -20px, 0)
     }
 
     to {
         opacity: 0;
-        transform: translate3d(0,2000px,0)
+        transform: translate3d(0, 2000px, 0)
     }
 }
 
-.Toastify__bounce-enter--bottom-left,.Toastify__bounce-enter--top-left {
+.Toastify__bounce-enter--bottom-left, .Toastify__bounce-enter--top-left {
     animation-name: Toastify__bounceInLeft
 }
 
-.Toastify__bounce-enter--bottom-right,.Toastify__bounce-enter--top-right {
+.Toastify__bounce-enter--bottom-right, .Toastify__bounce-enter--top-right {
     animation-name: Toastify__bounceInRight
 }
 
@@ -1067,11 +1071,11 @@ figure {
     animation-name: Toastify__bounceInUp
 }
 
-.Toastify__bounce-exit--bottom-left,.Toastify__bounce-exit--top-left {
+.Toastify__bounce-exit--bottom-left, .Toastify__bounce-exit--top-left {
     animation-name: Toastify__bounceOutLeft
 }
 
-.Toastify__bounce-exit--bottom-right,.Toastify__bounce-exit--top-right {
+.Toastify__bounce-exit--bottom-right, .Toastify__bounce-exit--top-right {
     animation-name: Toastify__bounceOutRight
 }
 
@@ -1086,7 +1090,7 @@ figure {
 @keyframes Toastify__zoomIn {
     0% {
         opacity: 0;
-        transform: scale3d(.3,.3,.3)
+        transform: scale3d(.3, .3, .3)
     }
 
     50% {
@@ -1101,7 +1105,7 @@ figure {
 
     50% {
         opacity: 0;
-        transform: scale3d(.3,.3,.3)
+        transform: scale3d(.3, .3, .3)
     }
 
     to {
@@ -1169,7 +1173,7 @@ figure {
 
 @keyframes Toastify__slideInRight {
     0% {
-        transform: translate3d(110%,0,0);
+        transform: translate3d(110%, 0, 0);
         visibility: visible
     }
 
@@ -1180,7 +1184,7 @@ figure {
 
 @keyframes Toastify__slideInLeft {
     0% {
-        transform: translate3d(-110%,0,0);
+        transform: translate3d(-110%, 0, 0);
         visibility: visible
     }
 
@@ -1191,7 +1195,7 @@ figure {
 
 @keyframes Toastify__slideInUp {
     0% {
-        transform: translate3d(0,110%,0);
+        transform: translate3d(0, 110%, 0);
         visibility: visible
     }
 
@@ -1202,7 +1206,7 @@ figure {
 
 @keyframes Toastify__slideInDown {
     0% {
-        transform: translate3d(0,-110%,0);
+        transform: translate3d(0, -110%, 0);
         visibility: visible
     }
 
@@ -1218,7 +1222,7 @@ figure {
 
     to {
         visibility: hidden;
-        transform: translate3d(110%,0,0)
+        transform: translate3d(110%, 0, 0)
     }
 }
 
@@ -1229,7 +1233,7 @@ figure {
 
     to {
         visibility: hidden;
-        transform: translate3d(-110%,0,0)
+        transform: translate3d(-110%, 0, 0)
     }
 }
 
@@ -1240,7 +1244,7 @@ figure {
 
     to {
         visibility: hidden;
-        transform: translate3d(0,500px,0)
+        transform: translate3d(0, 500px, 0)
     }
 }
 
@@ -1251,15 +1255,15 @@ figure {
 
     to {
         visibility: hidden;
-        transform: translate3d(0,-500px,0)
+        transform: translate3d(0, -500px, 0)
     }
 }
 
-.Toastify__slide-enter--bottom-left,.Toastify__slide-enter--top-left {
+.Toastify__slide-enter--bottom-left, .Toastify__slide-enter--top-left {
     animation-name: Toastify__slideInLeft
 }
 
-.Toastify__slide-enter--bottom-right,.Toastify__slide-enter--top-right {
+.Toastify__slide-enter--bottom-right, .Toastify__slide-enter--top-right {
     animation-name: Toastify__slideInRight
 }
 
@@ -1271,11 +1275,11 @@ figure {
     animation-name: Toastify__slideInUp
 }
 
-.Toastify__slide-exit--bottom-left,.Toastify__slide-exit--top-left {
+.Toastify__slide-exit--bottom-left, .Toastify__slide-exit--top-left {
     animation-name: Toastify__slideOutLeft
 }
 
-.Toastify__slide-exit--bottom-right,.Toastify__slide-exit--top-right {
+.Toastify__slide-exit--bottom-right, .Toastify__slide-exit--top-right {
     animation-name: Toastify__slideOutRight
 }
 
@@ -1314,7 +1318,7 @@ figure {
     cursor: pointer
 }
 
-.Alert_alert__clostBtn__55Qz2>svg {
+.Alert_alert__clostBtn__55Qz2 > svg {
     width: 20px;
     height: 20px
 }
@@ -1330,48 +1334,48 @@ figure {
 }
 
 .Alert_alert-primary__Z86dL {
-    border: 1px solid var(--primary-light,#caf8f8);
-    background: var(--primary-light,#caf8f8);
-    color: var(--primary-dark,#0e4f4f);
+    border: 1px solid var(--primary-light, #caf8f8);
+    background: var(--primary-light, #caf8f8);
+    color: var(--primary-dark, #0e4f4f);
     fill: var(--primary-light);
     stroke: var(--primary-base)
 }
 
 .Alert_alert-gray__vIqmz {
-    border: 1px solid var(--gray-300,#d0d5dd);
-    background: var(--gray-100,#f2f4f7);
-    color: var(--gray-700,#344054);
+    border: 1px solid var(--gray-300, #d0d5dd);
+    background: var(--gray-100, #f2f4f7);
+    color: var(--gray-700, #344054);
     fill: var(--gray-100);
     stroke: var(--gray-600)
 }
 
 .Alert_alert-error__T9Wrx {
-    border: 1px solid var(--error-light,#fecdca);
-    background: var(--error-light,#fecdca);
-    color: var(--error-dark,#7a271a);
+    border: 1px solid var(--error-light, #fecdca);
+    background: var(--error-light, #fecdca);
+    color: var(--error-dark, #7a271a);
     fill: var(--error-light);
     stroke: var(--error-base)
 }
 
 .Alert_alert-warning__bQDDk {
-    border: 1px solid var(--warning-light,#fedf89);
+    border: 1px solid var(--warning-light, #fedf89);
     background: var(--warning-light);
-    color: var(--warning-dark,#7a2e0e);
+    color: var(--warning-dark, #7a2e0e);
     fill: var(--warning-light);
     stroke: var(--warning-base)
 }
 
 .Alert_alert-success__FcS3C {
-    border: 1px solid var(--success-light,#a6f4c5);
-    background: var(--success-light,#a6f4c5);
-    color: var(--success-dark,#054f31);
+    border: 1px solid var(--success-light, #a6f4c5);
+    background: var(--success-light, #a6f4c5);
+    color: var(--success-dark, #054f31);
     fill: var(--success-light);
     stroke: var(--success-base)
 }
 
 @media screen and (max-width: 576) {
     .Alert_alert__FSpgk {
-        flex-direction:column
+        flex-direction: column
     }
 }
 
@@ -1419,32 +1423,32 @@ figure {
 
 .Badge_default__edPsE {
     background-color: var(--gray-100);
-    color: var(--gray-700,#344054)
+    color: var(--gray-700, #344054)
 }
 
 .Badge_primary___4hl3 {
     background-color: var(--primary-light);
-    color: var(--primary-dark,#0e4f4f)
+    color: var(--primary-dark, #0e4f4f)
 }
 
 .Badge_error__3RMgU {
     background-color: var(--error-light);
-    color: var(--error-dark,#7a271a)
+    color: var(--error-dark, #7a271a)
 }
 
 .Badge_success__4Y3Cw {
     background-color: var(--success-light);
-    color: var(--success-dark,#054f31)
+    color: var(--success-dark, #054f31)
 }
 
 .Badge_infomation__1wepN {
     background-color: var(--infomation-light);
-    color: var(--infomation-dark,#003074)
+    color: var(--infomation-dark, #003074)
 }
 
 .Badge_warning__ZYfZr {
     background-color: var(--warning-light);
-    color: var(--warning-dark,#7a2e0e)
+    color: var(--warning-dark, #7a2e0e)
 }
 
 .Badge_default__edPsE svg {
@@ -1471,7 +1475,7 @@ figure {
     stroke: var(--warning-base)
 }
 
-.Badge_container__ehKAY.Badge_only__5l8gE label,.Badge_container__ehKAY.Badge_only__5l8gE svg:not(:last-child) {
+.Badge_container__ehKAY.Badge_only__5l8gE label, .Badge_container__ehKAY.Badge_only__5l8gE svg:not(:last-child) {
     display: none
 }
 
@@ -1492,7 +1496,7 @@ figure {
 }
 
 .BreadCrumbs_selected__G_UIy {
-    color: var(--primary-dark,#0e4f4f);
+    color: var(--primary-dark, #0e4f4f);
     stroke: var(--primary-dark)
 }
 
@@ -1501,13 +1505,13 @@ figure {
     stroke: var(--primary-base)
 }
 
-.BreadCrumbs_breadCrumbs___9u73>svg {
+.BreadCrumbs_breadCrumbs___9u73 > svg {
     width: 16px;
     height: 16px;
     stroke: var(--gray-300)
 }
 
-.BreadCrumbs_breadCrumbsContainer__lE9uS,.BreadCrumbs_breadCrumbs___9u73 {
+.BreadCrumbs_breadCrumbsContainer__lE9uS, .BreadCrumbs_breadCrumbs___9u73 {
     display: flex;
     align-items: center;
     gap: 12px
@@ -1537,7 +1541,7 @@ figure {
     white-space: nowrap
 }
 
-.Button_button-normal__y4h10>svg,.Button_button-sm__ljQtM>svg {
+.Button_button-normal__y4h10 > svg, .Button_button-sm__ljQtM > svg {
     width: 20px;
     height: 20px
 }
@@ -1549,7 +1553,7 @@ figure {
     fill: var(--primary-dark)
 }
 
-.Button_button-color__7QnYK>svg>path {
+.Button_button-color__7QnYK > svg > path {
     stroke: var(--primary-dark)
 }
 
@@ -1560,12 +1564,12 @@ figure {
     fill: #fff
 }
 
-.Button_button-color__7QnYK:hover>svg>path {
+.Button_button-color__7QnYK:hover > svg > path {
     stroke: var(--base-white)
 }
 
 .Button_button-color__7QnYK:focus {
-    box-shadow: 0 0 0 4px #caf8f8,0 1px 2px 0 rgba(24,24,27,.05)
+    box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Button_button-color__7QnYK:disabled {
@@ -1580,7 +1584,7 @@ figure {
     fill: #fff
 }
 
-.Button_button-color-destructive__1mG3r>svg>path {
+.Button_button-color-destructive__1mG3r > svg > path {
     stroke: var(--base-white)
 }
 
@@ -1591,7 +1595,7 @@ figure {
 }
 
 .Button_button-color-destructive__1mG3r:focus {
-    box-shadow: 0 0 0 4px #fecdca,0 1px 2px 0 rgba(24,24,27,.05)
+    box-shadow: 0 0 0 4px #fecdca, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Button_button-color-destructive__1mG3r:disabled {
@@ -1601,13 +1605,13 @@ figure {
 }
 
 .Button_button-outline__YRytX {
-    background: linear-gradient(0deg,#fff,#fff),linear-gradient(0deg,#eaecf0,#eaecf0);
+    background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, #eaecf0, #eaecf0);
     border: 1px solid #eaecf0;
     color: var(--gray-800);
     fill: var(--gray-800)
 }
 
-.Button_button-outline__YRytX>svg>path {
+.Button_button-outline__YRytX > svg > path {
     stroke: var(--gray-800)
 }
 
@@ -1618,35 +1622,35 @@ figure {
     cursor: pointer
 }
 
-.Button_button-outline__YRytX:hover>svg>path {
+.Button_button-outline__YRytX:hover > svg > path {
     stroke: var(--gray-700)
 }
 
 .Button_button-outline__YRytX:focus {
-    box-shadow: 0 0 0 4px #f2f4f7,0 1px 2px 0 rgba(24,24,27,.05)
+    box-shadow: 0 0 0 4px #f2f4f7, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Button_button-outline__YRytX:disabled {
-    background: var(--base-white,#fff);
-    box-shadow: 0 1px 2px 0 rgba(16,24,40,.05);
+    background: var(--base-white, #fff);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05);
     border: 1px solid #f2f4f7;
     color: var(--gray-200);
     fill: var(--gray-200);
     pointer-events: none
 }
 
-.Button_button-outline__YRytX:disabled>svg>path {
+.Button_button-outline__YRytX:disabled > svg > path {
     stroke: var(--gray-200)
 }
 
 .Button_button-outline-destructive__PCV5i {
-    background: linear-gradient(0deg,#fff,#fff),linear-gradient(0deg,var(--error-base),var(--error-base));
+    background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, var(--error-base), var(--error-base));
     border: 1px solid var(--error-base);
     color: var(--error-base);
     fill: var(--error-base)
 }
 
-.Button_button-outline-destructive__PCV5i>svg>path {
+.Button_button-outline-destructive__PCV5i > svg > path {
     stroke: var(--error-base)
 }
 
@@ -1657,40 +1661,40 @@ figure {
 }
 
 .Button_button-outline-destructive__PCV5i:focus {
-    box-shadow: 0 0 0 4px #fecdca,0 1px 2px 0 rgba(24,24,27,.05)
+    box-shadow: 0 0 0 4px #fecdca, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Button_button-outline-destructive__PCV5i:disabled {
-    background: linear-gradient(0deg,#fff,#fff),linear-gradient(0deg,var(--error-light),var(--error-light));
+    background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, var(--error-light), var(--error-light));
     border: 1px solid var(--error-light);
     color: var(--error-light);
     fill: var(--error-light);
     pointer-events: none
 }
 
-.Button_button-outline-destructive__PCV5i:disabled>svg>path {
+.Button_button-outline-destructive__PCV5i:disabled > svg > path {
     stroke: var(--error-light)
 }
 
 .Button_button-outline-dark__skzll {
-    border: 1px solid hsla(0,0%,100%,.2);
-    background: hsla(0,0%,100%,.1);
-    box-shadow: 0 1px 2px 0 rgba(16,24,40,.05);
-    color: var(--base-white,#fff);
-    fill: var(--base-white,#fff)
+    border: 1px solid hsla(0, 0%, 100%, .2);
+    background: hsla(0, 0%, 100%, .1);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05);
+    color: var(--base-white, #fff);
+    fill: var(--base-white, #fff)
 }
 
-.Button_button-outline-dark__skzll>svg>path {
+.Button_button-outline-dark__skzll > svg > path {
     stroke: var(--base-white)
 }
 
 .Button_button-outline-dark__skzll:hover {
-    background: hsla(0,0%,100%,.2);
+    background: hsla(0, 0%, 100%, .2);
     cursor: pointer
 }
 
 .Button_button-outline-dark__skzll:focus {
-    box-shadow: 0 0 0 4px #f2f4f7,0 1px 2px 0 rgba(24,24,27,.05)
+    box-shadow: 0 0 0 4px #f2f4f7, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Button_button-outline-dark__skzll:disabled {
@@ -1715,21 +1719,21 @@ figure {
     box-shadow: none
 }
 
-.Button_button-link-color__rou_U>svg>path {
+.Button_button-link-color__rou_U > svg > path {
     stroke: var(--primary-dark)
 }
 
-.Button_button-link-color-destructive__QtFPf>svg>path {
+.Button_button-link-color-destructive__QtFPf > svg > path {
     stroke: var(--error-base)
 }
 
-.Button_button-link-color-destructive__QtFPf:hover,.Button_button-link-color__rou_U:hover {
+.Button_button-link-color-destructive__QtFPf:hover, .Button_button-link-color__rou_U:hover {
     color: var(--primary-base);
     fill: var(--primary-base);
     cursor: pointer
 }
 
-.Button_button-link-color-destructive__QtFPf:hover>svg>path,.Button_button-link-color__rou_U:hover>svg>path {
+.Button_button-link-color-destructive__QtFPf:hover > svg > path, .Button_button-link-color__rou_U:hover > svg > path {
     stroke: var(--primary-base)
 }
 
@@ -1742,7 +1746,7 @@ figure {
     box-shadow: none
 }
 
-.Button_button-link-color__rou_U:focus>svg>path {
+.Button_button-link-color__rou_U:focus > svg > path {
     stroke: var(--primary-dark)
 }
 
@@ -1756,7 +1760,7 @@ figure {
     box-shadow: none
 }
 
-.Button_button-link-color__rou_U:disabled>svg>path {
+.Button_button-link-color__rou_U:disabled > svg > path {
     stroke: var(--gray-200)
 }
 
@@ -1771,8 +1775,8 @@ figure {
 
 .Card_card__rC1zg {
     border-radius: 32px;
-    border: 1px solid var(--gray-200,#eaecf0);
-    background: var(--base-white,#fff);
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
     box-shadow: var(--shadow-sm)
 }
 
@@ -1805,8 +1809,8 @@ figure {
 .ProductCard_imageWrapper__image__uTO4K {
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 4px 6px -2px rgba(16,24,40,.06),0 12px 16px -4px rgba(16,24,40,.1);
-    max-width: 100%!important
+    box-shadow: 0 4px 6px -2px rgba(16, 24, 40, .06), 0 12px 16px -4px rgba(16, 24, 40, .1);
+    max-width: 100% !important
 }
 
 .ProductCard_imageWrapper__badge__rTZ4B {
@@ -1818,7 +1822,7 @@ figure {
     position: absolute;
     left: 28px;
     top: 28px;
-    color: var(--warning-dark,#7a2e0e)
+    color: var(--warning-dark, #7a2e0e)
 }
 
 .ProductCard_cardContent__dhwKR {
@@ -1843,11 +1847,11 @@ figure {
 }
 
 .ProductCard_location__T5BYG {
-    color: var(--gray-700,#344054);
+    color: var(--gray-700, #344054);
     max-width: 100%
 }
 
-.ProductCard_location__T5BYG>label {
+.ProductCard_location__T5BYG > label {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap
@@ -1861,7 +1865,7 @@ figure {
     color: var(--gray-600)
 }
 
-.ProductCard_description__bKmA4 p,.ProductCard_title__Qzx4a {
+.ProductCard_description__bKmA4 p, .ProductCard_title__Qzx4a {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap
@@ -1901,15 +1905,15 @@ figure {
 
 .ProductCard_list__r7WEn .ProductCard_footer__nZNq6 {
     padding: 20px 0 0;
-    border-top: 1px solid var(--gray-200,#eaecf0)
+    border-top: 1px solid var(--gray-200, #eaecf0)
 }
 
 .ProductCard_price__57kp2 {
-    color: var(--primary-dark,#0e4f4f)
+    color: var(--primary-dark, #0e4f4f)
 }
 
 .ProductCard_originalPrice__uD5zs {
-    color: var(--gray-400,#98a2b3);
+    color: var(--gray-400, #98a2b3);
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -1921,7 +1925,7 @@ figure {
 
 @media (max-width: 1024px) {
     .ProductCard_grid__nIKGW {
-        width:345px
+        width: 345px
     }
 }
 
@@ -1943,7 +1947,7 @@ figure {
     height: 216px
 }
 
-.CategoryCard_body__UUyeo,.CategoryCard_footer__O2fDe {
+.CategoryCard_body__UUyeo, .CategoryCard_footer__O2fDe {
     display: flex;
     padding: 0 24px;
     flex-direction: column;
@@ -1958,7 +1962,7 @@ figure {
 
 @media (max-width: 1024px) {
     .CategoryCard_categoryCard__X6aCz {
-        width:345px;
+        width: 345px;
         gap: 16px
     }
 
@@ -1990,8 +1994,8 @@ figure {
 .BlogCard_imageWrapper__image__GHfnP {
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 4px 6px -2px rgba(16,24,40,.06),0 12px 16px -4px rgba(16,24,40,.1);
-    max-width: 100%!important
+    box-shadow: 0 4px 6px -2px rgba(16, 24, 40, .06), 0 12px 16px -4px rgba(16, 24, 40, .1);
+    max-width: 100% !important
 }
 
 .BlogCard_body__glkpY {
@@ -2023,8 +2027,8 @@ figure {
     text-overflow: ellipsis
 }
 
-.BlogCard_description___VAs2,.BlogCard_footer__bYl6N {
-    color: var(--gray-600,#475467)
+.BlogCard_description___VAs2, .BlogCard_footer__bYl6N {
+    color: var(--gray-600, #475467)
 }
 
 .BlogCard_footer__bYl6N {
@@ -2033,7 +2037,7 @@ figure {
 
 @media (max-width: 1024px) {
     .BlogCard_blogCard__vJqzJ {
-        width:100%
+        width: 100%
     }
 }
 
@@ -2062,7 +2066,7 @@ figure {
 }
 
 .RoomCard_title__KpjMb {
-    color: var(--gray-900,#101828);
+    color: var(--gray-900, #101828);
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -2081,15 +2085,15 @@ figure {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--gray-600,#475467)
+    color: var(--gray-600, #475467)
 }
 
 .RoomCard_price__I_g9T {
-    color: var(--primary-dark,#0e4f4f)
+    color: var(--primary-dark, #0e4f4f)
 }
 
 .RoomCard_user__SF3Nj {
-    color: var(--gray-400,#98a2b3);
+    color: var(--gray-400, #98a2b3);
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -2112,7 +2116,7 @@ figure {
 .RoomCard_room-content__P5BxF {
     width: 960px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 24px 40px 24px 24px;
     grid-gap: 40px;
     gap: 40px;
@@ -2137,13 +2141,13 @@ figure {
 
 .RoomCard_img-item-active__zfKVW {
     border-radius: 8px;
-    border: 1px solid var(--primary-base,#77dada);
-    box-shadow: 0 0 0 4px #caf8f8,0 1px 2px 0 rgba(24,24,27,.05)
+    border: 1px solid var(--primary-base, #77dada);
+    box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .RoomCard_overviews__c4obK {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 32px;
     grid-row-gap: 24px;
     padding-bottom: 100px
@@ -2162,7 +2166,7 @@ figure {
 
 @media (max-width: 1024px) {
     .RoomCard_roomCard__JbEf7 {
-        flex-direction:column;
+        flex-direction: column;
         align-items: flex-start
     }
 
@@ -2212,8 +2216,8 @@ figure {
     gap: 16px;
     flex-shrink: 0;
     align-self: stretch;
-    border-right: 1px solid var(--gray-200,#eaecf0);
-    color: var(--warning-base,#f79009)
+    border-right: 1px solid var(--gray-200, #eaecf0);
+    color: var(--warning-base, #f79009)
 }
 
 .StaticCard_content__mHv4p {
@@ -2238,7 +2242,7 @@ figure {
     gap: 8px;
     flex: 1 0;
     border-radius: 100px;
-    background: var(--gray-100,#f2f4f7)
+    background: var(--gray-100, #f2f4f7)
 }
 
 .StaticCard_progressBar__x_GMN .StaticCard_progress__723uy {
@@ -2247,16 +2251,16 @@ figure {
     top: 0;
     left: 0;
     border-radius: 100px;
-    background: var(--warning-base,#f79009)
+    background: var(--warning-base, #f79009)
 }
 
 .StaticCard_content__item__70Yef label {
-    color: var(--infomation-base,#356ad1)
+    color: var(--infomation-base, #356ad1)
 }
 
 @media (max-width: 1024px) {
     .StaticCard_staticCard__bx9np {
-        gap:16px
+        gap: 16px
     }
 
     .StaticCard_rate__FmE8j {
@@ -2291,7 +2295,7 @@ figure {
 }
 
 .RateCard_rateCard__8OekE p {
-    color: var(--gray-600,#475467)
+    color: var(--gray-600, #475467)
 }
 
 .RateCard_action__ldtUC {
@@ -2304,11 +2308,11 @@ figure {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: var(--gray-200,#eaecf0)
+    background: var(--gray-200, #eaecf0)
 }
 
 .RateCard_date__pdWKt {
-    color: var(--gray-600,#475467)
+    color: var(--gray-600, #475467)
 }
 
 .FlightsCard_header__z_QqO {
@@ -2322,7 +2326,7 @@ figure {
 
 @media (max-width: 1024px) {
     .FlightsCard_header__z_QqO {
-        padding:8px 16px 16px
+        padding: 8px 16px 16px
     }
 }
 
@@ -2332,7 +2336,7 @@ figure {
 }
 
 .FlightItemCard_header__fyioF p {
-    color: var(--gray-500,#667085)
+    color: var(--gray-500, #667085)
 }
 
 .FlightItemCard_header__fyioF .FlightItemCard_img-wrapper__Z8tXu {
@@ -2342,7 +2346,7 @@ figure {
 
 .FlightItemCard_price-mobile__Cxgwg {
     display: none;
-    color: var(--success-base,#12b76a)
+    color: var(--success-base, #12b76a)
 }
 
 .FlightItemCard_item-group__mWKsn {
@@ -2366,7 +2370,7 @@ figure {
 }
 
 .FlightItemCard_header__fyioF .FlightItemCard_price__yFFyH label {
-    color: var(--success-base,#12b76a)
+    color: var(--success-base, #12b76a)
 }
 
 .FlightItemCard_content__eJaAQ {
@@ -2387,37 +2391,37 @@ figure {
 .FlightItemCard_vertical-steps__Wzkcv .FlightItemCard_vertical-big-dot__68E_0 {
     width: 12px;
     height: 12px;
-    border: 2px solid var(--gray-200,#eaecf0);
+    border: 2px solid var(--gray-200, #eaecf0);
     border-radius: 50%
 }
 
 .FlightItemCard_vertical-steps__Wzkcv .FlightItemCard_vertical-small-dot__pPBY5 {
     width: 4px;
     height: 4px;
-    background-color: var(--gray-200,#eaecf0)
+    background-color: var(--gray-200, #eaecf0)
 }
 
 .FlightItemCard_content__eJaAQ .FlightItemCard_dot__Fb_rm {
     width: 2px;
     height: 2px;
-    background-color: var(--gray-400,#98a2b3);
+    background-color: var(--gray-400, #98a2b3);
     border-radius: 50%
 }
 
 .FlightItemCard_content__eJaAQ p {
-    color: var(--gray-500,#667085)
+    color: var(--gray-500, #667085)
 }
 
 .FlightItemCard_selected-flight__Io5JG {
     border-radius: 24px;
-    border: 1px solid var(--primary-base,#77dada);
+    border: 1px solid var(--primary-base, #77dada);
     background: #f3ffff;
     box-shadow: var(--shadow-sm)
 }
 
 @media (max-width: 1024px) {
     .FlightItemCard_header__fyioF {
-        flex-direction:column
+        flex-direction: column
     }
 
     .FlightItemCard_header__fyioF .FlightItemCard_item-group__mWKsn {
@@ -2428,7 +2432,7 @@ figure {
         text-align: right
     }
 
-    .FlightItemCard_header__fyioF .FlightItemCard_destination___qpoR,.FlightItemCard_select-btn__L2VsD {
+    .FlightItemCard_header__fyioF .FlightItemCard_destination___qpoR, .FlightItemCard_select-btn__L2VsD {
         width: 100%
     }
 
@@ -2462,8 +2466,8 @@ figure {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 1px solid var(--gray-200,#eaecf0);
-    background: var(--base-white,#fff);
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
     box-shadow: var(--shadow-sm);
     z-index: 2
 }
@@ -2509,8 +2513,8 @@ figure {
 
 .Carousel_thumbs__U_A8F .Carousel_thumbItemActive__gU0ur {
     border-radius: 8px;
-    border: 1px solid var(--primary-base,#77dada);
-    box-shadow: 0 0 0 4px #caf8f8,0 1px 2px 0 rgba(24,24,27,.05)
+    border: 1px solid var(--primary-base, #77dada);
+    box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Carousel_fade__45c0l {
@@ -2530,7 +2534,7 @@ figure {
 
 @media (max-width: 1024px) {
     .Carousel_carousel-btn__BEiAX {
-        padding:4px
+        padding: 4px
     }
 
     .Carousel_carousel-btn__BEiAX svg {
@@ -2580,7 +2584,7 @@ figure {
 }
 
 .Checkbox_title__rGvCj {
-    color: var(--gray-700,#344054);
+    color: var(--gray-700, #344054);
     font-weight: 500
 }
 
@@ -2598,14 +2602,14 @@ figure {
     background-color: var(--primary-base)
 }
 
-.Checkbox_container__ccFUl input:focus~.Checkbox_checkmark__81gnF {
+.Checkbox_container__ccFUl input:focus ~ .Checkbox_checkmark__81gnF {
     border-radius: 4px;
-    border: 1px solid var(--primary-base,#77dada);
-    background: var(--base-white,#fff);
+    border: 1px solid var(--primary-base, #77dada);
+    background: var(--base-white, #fff);
     box-shadow: 0 0 0 4px #caf8f8
 }
 
-.Checkbox_container__ccFUl input:disabled~.Checkbox_checkmark__81gnF {
+.Checkbox_container__ccFUl input:disabled ~ .Checkbox_checkmark__81gnF {
     background-color: var(--gray-100);
     border: 1px solid var(--gray-300)
 }
@@ -2615,7 +2619,7 @@ figure {
     height: 16px
 }
 
-.Checkbox_checkmark__81gnF.Checkbox_sm__nLRCs>svg {
+.Checkbox_checkmark__81gnF.Checkbox_sm__nLRCs > svg {
     width: 12px;
     height: 12px;
     stroke-width: 1.6
@@ -2626,36 +2630,36 @@ figure {
     height: 20px
 }
 
-.Checkbox_checkmark__81gnF.Checkbox_md__MTHPP>svg {
+.Checkbox_checkmark__81gnF.Checkbox_md__MTHPP > svg {
     width: 14px;
     height: 14px;
     stroke-width: 2
 }
 
-.Checkbox_checkmark__81gnF:after,.Checkbox_checkmark__81gnF>svg {
+.Checkbox_checkmark__81gnF:after, .Checkbox_checkmark__81gnF > svg {
     content: "";
     display: none
 }
 
-.Checkbox_container__ccFUl input:checked~.Checkbox_checkmark__81gnF>svg {
+.Checkbox_container__ccFUl input:checked ~ .Checkbox_checkmark__81gnF > svg {
     display: block;
     stroke: solid var(--primary-dark)
 }
 
-.Checkbox_container__ccFUl>input[type=checkbox]~.Checkbox_checkmark__81gnF {
+.Checkbox_container__ccFUl > input[type=checkbox] ~ .Checkbox_checkmark__81gnF {
     border-radius: 4px
 }
 
-.Checkbox_container__ccFUl>input:checked~.Checkbox_checkmark__81gnF {
-    border: 1px solid var(--primary-dark,#0e4f4f);
-    background: var(--primary-base,#77dada)
+.Checkbox_container__ccFUl > input:checked ~ .Checkbox_checkmark__81gnF {
+    border: 1px solid var(--primary-dark, #0e4f4f);
+    background: var(--primary-base, #77dada)
 }
 
-.Checkbox_container__ccFUl>input[type=radio]~.Checkbox_checkmark__81gnF {
+.Checkbox_container__ccFUl > input[type=radio] ~ .Checkbox_checkmark__81gnF {
     border-radius: 100%
 }
 
-.Checkbox_container__ccFUl>input[type=radio]:checked~.Checkbox_checkmark__81gnF.Checkbox_sm__nLRCs:after {
+.Checkbox_container__ccFUl > input[type=radio]:checked ~ .Checkbox_checkmark__81gnF.Checkbox_sm__nLRCs:after {
     display: block;
     width: 6px;
     height: 6px;
@@ -2663,7 +2667,7 @@ figure {
     background-color: var(--primary-dark)
 }
 
-.Checkbox_container__ccFUl>input[type=radio]:checked~.Checkbox_checkmark__81gnF.Checkbox_md__MTHPP:after {
+.Checkbox_container__ccFUl > input[type=radio]:checked ~ .Checkbox_checkmark__81gnF.Checkbox_md__MTHPP:after {
     display: block;
     width: 8px;
     height: 8px;
@@ -2671,7 +2675,7 @@ figure {
     background-color: var(--primary-dark)
 }
 
-.react-datepicker__month-read-view--down-arrow,.react-datepicker__month-year-read-view--down-arrow,.react-datepicker__navigation-icon:before,.react-datepicker__year-read-view--down-arrow {
+.react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__navigation-icon:before, .react-datepicker__year-read-view--down-arrow {
     border-color: #ccc;
     border-style: solid;
     border-width: 3px 3px 0 0;
@@ -2683,13 +2687,13 @@ figure {
     width: 9px
 }
 
-.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle,.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle, .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
     margin-left: -4px;
     position: absolute;
     width: 0
 }
 
-.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:after,.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:before,.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:after,.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:before {
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:after, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:before, .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:after, .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:before {
     box-sizing: content-box;
     position: absolute;
     height: 0;
@@ -2700,7 +2704,7 @@ figure {
     left: -8px
 }
 
-.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:before,.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:before {
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:before, .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:before {
     border-bottom-color: #aeaeae
 }
 
@@ -2709,7 +2713,7 @@ figure {
     margin-top: -8px
 }
 
-.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:after,.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:before {
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:after, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle:before {
     border-top: none;
     border-bottom-color: #f0f0f0
 }
@@ -2728,7 +2732,7 @@ figure {
     margin-bottom: -8px
 }
 
-.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:after,.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:before {
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:after, .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle:before {
     border-bottom: none;
     border-top-color: #fff
 }
@@ -2749,7 +2753,7 @@ figure {
 }
 
 .react-datepicker {
-    font-family: Helvetica Neue,helvetica,arial,sans-serif;
+    font-family: Helvetica Neue, helvetica, arial, sans-serif;
     font-size: .8rem;
     background-color: #fff;
     color: #000;
@@ -2767,7 +2771,7 @@ figure {
     border-left: 0
 }
 
-.react-datepicker--time-only .react-datepicker__time,.react-datepicker--time-only .react-datepicker__time-box {
+.react-datepicker--time-only .react-datepicker__time, .react-datepicker--time-only .react-datepicker__time-box {
     border-bottom-left-radius: .3rem;
     border-bottom-right-radius: .3rem
 }
@@ -2785,7 +2789,7 @@ figure {
     padding-top: 10px
 }
 
-.react-datepicker-popper[data-placement=bottom-end] .react-datepicker__triangle,.react-datepicker-popper[data-placement=top-end] .react-datepicker__triangle {
+.react-datepicker-popper[data-placement=bottom-end] .react-datepicker__triangle, .react-datepicker-popper[data-placement=top-end] .react-datepicker__triangle {
     left: auto;
     right: 50px
 }
@@ -2835,12 +2839,12 @@ figure {
     border-top-right-radius: .3rem
 }
 
-.react-datepicker__month-dropdown-container--scroll,.react-datepicker__month-dropdown-container--select,.react-datepicker__month-year-dropdown-container--scroll,.react-datepicker__month-year-dropdown-container--select,.react-datepicker__year-dropdown-container--scroll,.react-datepicker__year-dropdown-container--select {
+.react-datepicker__month-dropdown-container--scroll, .react-datepicker__month-dropdown-container--select, .react-datepicker__month-year-dropdown-container--scroll, .react-datepicker__month-year-dropdown-container--select, .react-datepicker__year-dropdown-container--scroll, .react-datepicker__year-dropdown-container--select {
     display: inline-block;
     margin: 0 15px
 }
 
-.react-datepicker-time__header,.react-datepicker-year-header,.react-datepicker__current-month {
+.react-datepicker-time__header, .react-datepicker-year-header, .react-datepicker__current-month {
     margin-top: 0;
     color: #000;
     font-weight: 700;
@@ -2954,7 +2958,7 @@ figure {
     text-align: center
 }
 
-.react-datepicker__month .react-datepicker__month-text,.react-datepicker__month .react-datepicker__quarter-text {
+.react-datepicker__month .react-datepicker__month-text, .react-datepicker__month .react-datepicker__quarter-text {
     display: inline-block;
     width: 4rem;
     margin: 2px
@@ -2968,7 +2972,7 @@ figure {
     text-align: left
 }
 
-.react-datepicker__input-time-container .react-datepicker-time__caption,.react-datepicker__input-time-container .react-datepicker-time__input-container {
+.react-datepicker__input-time-container .react-datepicker-time__caption, .react-datepicker__input-time-container .react-datepicker-time__input-container {
     display: inline-block
 }
 
@@ -2981,7 +2985,7 @@ figure {
     width: auto
 }
 
-.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type=time]::-webkit-inner-spin-button,.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type=time]::-webkit-outer-spin-button {
+.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type=time]::-webkit-inner-spin-button, .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type=time]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0
 }
@@ -3112,7 +3116,7 @@ figure {
     white-space: nowrap
 }
 
-.react-datepicker__day,.react-datepicker__day-name,.react-datepicker__time-name {
+.react-datepicker__day, .react-datepicker__day-name, .react-datepicker__time-name {
     color: #000;
     display: inline-block;
     width: 1.7rem;
@@ -3121,45 +3125,45 @@ figure {
     margin: .166rem
 }
 
-.react-datepicker__day,.react-datepicker__month-text,.react-datepicker__quarter-text,.react-datepicker__year-text {
+.react-datepicker__day, .react-datepicker__month-text, .react-datepicker__quarter-text, .react-datepicker__year-text {
     cursor: pointer
 }
 
-.react-datepicker__day:hover,.react-datepicker__month-text:hover,.react-datepicker__quarter-text:hover,.react-datepicker__year-text:hover {
+.react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover {
     border-radius: .3rem;
     background-color: #f0f0f0
 }
 
-.react-datepicker__day--today,.react-datepicker__month-text--today,.react-datepicker__quarter-text--today,.react-datepicker__year-text--today {
+.react-datepicker__day--today, .react-datepicker__month-text--today, .react-datepicker__quarter-text--today, .react-datepicker__year-text--today {
     font-weight: 700
 }
 
-.react-datepicker__day--highlighted,.react-datepicker__month-text--highlighted,.react-datepicker__quarter-text--highlighted,.react-datepicker__year-text--highlighted {
+.react-datepicker__day--highlighted, .react-datepicker__month-text--highlighted, .react-datepicker__quarter-text--highlighted, .react-datepicker__year-text--highlighted {
     border-radius: .3rem;
     background-color: #3dcc4a;
     color: #fff
 }
 
-.react-datepicker__day--highlighted:hover,.react-datepicker__month-text--highlighted:hover,.react-datepicker__quarter-text--highlighted:hover,.react-datepicker__year-text--highlighted:hover {
+.react-datepicker__day--highlighted:hover, .react-datepicker__month-text--highlighted:hover, .react-datepicker__quarter-text--highlighted:hover, .react-datepicker__year-text--highlighted:hover {
     background-color: #32be3f
 }
 
-.react-datepicker__day--highlighted-custom-1,.react-datepicker__month-text--highlighted-custom-1,.react-datepicker__quarter-text--highlighted-custom-1,.react-datepicker__year-text--highlighted-custom-1 {
+.react-datepicker__day--highlighted-custom-1, .react-datepicker__month-text--highlighted-custom-1, .react-datepicker__quarter-text--highlighted-custom-1, .react-datepicker__year-text--highlighted-custom-1 {
     color: #f0f
 }
 
-.react-datepicker__day--highlighted-custom-2,.react-datepicker__month-text--highlighted-custom-2,.react-datepicker__quarter-text--highlighted-custom-2,.react-datepicker__year-text--highlighted-custom-2 {
+.react-datepicker__day--highlighted-custom-2, .react-datepicker__month-text--highlighted-custom-2, .react-datepicker__quarter-text--highlighted-custom-2, .react-datepicker__year-text--highlighted-custom-2 {
     color: green
 }
 
-.react-datepicker__day--holidays,.react-datepicker__month-text--holidays,.react-datepicker__quarter-text--holidays,.react-datepicker__year-text--holidays {
+.react-datepicker__day--holidays, .react-datepicker__month-text--holidays, .react-datepicker__quarter-text--holidays, .react-datepicker__year-text--holidays {
     position: relative;
     border-radius: .3rem;
     background-color: #ff6803;
     color: #fff
 }
 
-.react-datepicker__day--holidays .holiday-overlay,.react-datepicker__month-text--holidays .holiday-overlay,.react-datepicker__quarter-text--holidays .holiday-overlay,.react-datepicker__year-text--holidays .holiday-overlay {
+.react-datepicker__day--holidays .holiday-overlay, .react-datepicker__month-text--holidays .holiday-overlay, .react-datepicker__quarter-text--holidays .holiday-overlay, .react-datepicker__year-text--holidays .holiday-overlay {
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -3171,53 +3175,53 @@ figure {
     white-space: nowrap;
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s,opacity .3s ease-in-out
+    transition: visibility 0s, opacity .3s ease-in-out
 }
 
-.react-datepicker__day--holidays:hover,.react-datepicker__month-text--holidays:hover,.react-datepicker__quarter-text--holidays:hover,.react-datepicker__year-text--holidays:hover {
+.react-datepicker__day--holidays:hover, .react-datepicker__month-text--holidays:hover, .react-datepicker__quarter-text--holidays:hover, .react-datepicker__year-text--holidays:hover {
     background-color: #cf5300
 }
 
-.react-datepicker__day--holidays:hover .holiday-overlay,.react-datepicker__month-text--holidays:hover .holiday-overlay,.react-datepicker__quarter-text--holidays:hover .holiday-overlay,.react-datepicker__year-text--holidays:hover .holiday-overlay {
+.react-datepicker__day--holidays:hover .holiday-overlay, .react-datepicker__month-text--holidays:hover .holiday-overlay, .react-datepicker__quarter-text--holidays:hover .holiday-overlay, .react-datepicker__year-text--holidays:hover .holiday-overlay {
     visibility: visible;
     opacity: 1
 }
 
-.react-datepicker__day--in-range,.react-datepicker__day--in-selecting-range,.react-datepicker__day--selected,.react-datepicker__month-text--in-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__month-text--selected,.react-datepicker__quarter-text--in-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__quarter-text--selected,.react-datepicker__year-text--in-range,.react-datepicker__year-text--in-selecting-range,.react-datepicker__year-text--selected {
+.react-datepicker__day--in-range, .react-datepicker__day--in-selecting-range, .react-datepicker__day--selected, .react-datepicker__month-text--in-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--selected, .react-datepicker__quarter-text--in-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--selected, .react-datepicker__year-text--in-range, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--selected {
     border-radius: .3rem;
     background-color: #216ba5;
     color: #fff
 }
 
-.react-datepicker__day--in-range:hover,.react-datepicker__day--in-selecting-range:hover,.react-datepicker__day--selected:hover,.react-datepicker__month-text--in-range:hover,.react-datepicker__month-text--in-selecting-range:hover,.react-datepicker__month-text--selected:hover,.react-datepicker__quarter-text--in-range:hover,.react-datepicker__quarter-text--in-selecting-range:hover,.react-datepicker__quarter-text--selected:hover,.react-datepicker__year-text--in-range:hover,.react-datepicker__year-text--in-selecting-range:hover,.react-datepicker__year-text--selected:hover {
+.react-datepicker__day--in-range:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--selected:hover, .react-datepicker__month-text--in-range:hover, .react-datepicker__month-text--in-selecting-range:hover, .react-datepicker__month-text--selected:hover, .react-datepicker__quarter-text--in-range:hover, .react-datepicker__quarter-text--in-selecting-range:hover, .react-datepicker__quarter-text--selected:hover, .react-datepicker__year-text--in-range:hover, .react-datepicker__year-text--in-selecting-range:hover, .react-datepicker__year-text--selected:hover {
     background-color: #1d5d90
 }
 
-.react-datepicker__day--keyboard-selected,.react-datepicker__month-text--keyboard-selected,.react-datepicker__quarter-text--keyboard-selected,.react-datepicker__year-text--keyboard-selected {
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
     border-radius: .3rem;
     background-color: #bad9f1;
     color: #000
 }
 
-.react-datepicker__day--keyboard-selected:hover,.react-datepicker__month-text--keyboard-selected:hover,.react-datepicker__quarter-text--keyboard-selected:hover,.react-datepicker__year-text--keyboard-selected:hover {
+.react-datepicker__day--keyboard-selected:hover, .react-datepicker__month-text--keyboard-selected:hover, .react-datepicker__quarter-text--keyboard-selected:hover, .react-datepicker__year-text--keyboard-selected:hover {
     background-color: #1d5d90
 }
 
-.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range),.react-datepicker__month-text--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range),.react-datepicker__quarter-text--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range),.react-datepicker__year-text--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range) {
-    background-color: rgba(33,107,165,.5)
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range), .react-datepicker__month-text--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range), .react-datepicker__quarter-text--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range), .react-datepicker__year-text--in-selecting-range:not(.react-datepicker__day--in-range,.react-datepicker__month-text--in-range,.react-datepicker__quarter-text--in-range,.react-datepicker__year-text--in-range) {
+    background-color: rgba(33, 107, 165, .5)
 }
 
-.react-datepicker__month--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__month--selecting-range .react-datepicker__month-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__month--selecting-range .react-datepicker__quarter-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__month--selecting-range .react-datepicker__year-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__year--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__year--selecting-range .react-datepicker__month-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__year--selecting-range .react-datepicker__quarter-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range),.react-datepicker__year--selecting-range .react-datepicker__year-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range) {
+.react-datepicker__month--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__month--selecting-range .react-datepicker__month-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__month--selecting-range .react-datepicker__quarter-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__month--selecting-range .react-datepicker__year-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__year--selecting-range .react-datepicker__day--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__year--selecting-range .react-datepicker__month-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__year--selecting-range .react-datepicker__quarter-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range), .react-datepicker__year--selecting-range .react-datepicker__year-text--in-range:not(.react-datepicker__day--in-selecting-range,.react-datepicker__month-text--in-selecting-range,.react-datepicker__quarter-text--in-selecting-range,.react-datepicker__year-text--in-selecting-range) {
     background-color: #f0f0f0;
     color: #000
 }
 
-.react-datepicker__day--disabled,.react-datepicker__month-text--disabled,.react-datepicker__quarter-text--disabled,.react-datepicker__year-text--disabled {
+.react-datepicker__day--disabled, .react-datepicker__month-text--disabled, .react-datepicker__quarter-text--disabled, .react-datepicker__year-text--disabled {
     cursor: default;
     color: #ccc
 }
 
-.react-datepicker__day--disabled:hover,.react-datepicker__month-text--disabled:hover,.react-datepicker__quarter-text--disabled:hover,.react-datepicker__year-text--disabled:hover {
+.react-datepicker__day--disabled:hover, .react-datepicker__month-text--disabled:hover, .react-datepicker__quarter-text--disabled:hover, .react-datepicker__year-text--disabled:hover {
     background-color: transparent
 }
 
@@ -3237,27 +3241,27 @@ figure {
     padding: 6px 10px 5px 25px
 }
 
-.react-datepicker__month-read-view,.react-datepicker__month-year-read-view,.react-datepicker__year-read-view {
+.react-datepicker__month-read-view, .react-datepicker__month-year-read-view, .react-datepicker__year-read-view {
     border: 1px solid transparent;
     border-radius: .3rem;
     position: relative
 }
 
-.react-datepicker__month-read-view:hover,.react-datepicker__month-year-read-view:hover,.react-datepicker__year-read-view:hover {
+.react-datepicker__month-read-view:hover, .react-datepicker__month-year-read-view:hover, .react-datepicker__year-read-view:hover {
     cursor: pointer
 }
 
-.react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow,.react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow,.react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow,.react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow,.react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow,.react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow {
+.react-datepicker__month-read-view:hover .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-read-view:hover .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-year-read-view:hover .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view:hover .react-datepicker__year-read-view--down-arrow, .react-datepicker__year-read-view:hover .react-datepicker__month-read-view--down-arrow, .react-datepicker__year-read-view:hover .react-datepicker__year-read-view--down-arrow {
     border-top-color: #b3b3b3
 }
 
-.react-datepicker__month-read-view--down-arrow,.react-datepicker__month-year-read-view--down-arrow,.react-datepicker__year-read-view--down-arrow {
+.react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__year-read-view--down-arrow {
     transform: rotate(135deg);
     right: -16px;
     top: 0
 }
 
-.react-datepicker__month-dropdown,.react-datepicker__month-year-dropdown,.react-datepicker__year-dropdown {
+.react-datepicker__month-dropdown, .react-datepicker__month-year-dropdown, .react-datepicker__year-dropdown {
     background-color: #f0f0f0;
     position: absolute;
     width: 50%;
@@ -3269,16 +3273,16 @@ figure {
     border: 1px solid #aeaeae
 }
 
-.react-datepicker__month-dropdown:hover,.react-datepicker__month-year-dropdown:hover,.react-datepicker__year-dropdown:hover {
+.react-datepicker__month-dropdown:hover, .react-datepicker__month-year-dropdown:hover, .react-datepicker__year-dropdown:hover {
     cursor: pointer
 }
 
-.react-datepicker__month-dropdown--scrollable,.react-datepicker__month-year-dropdown--scrollable,.react-datepicker__year-dropdown--scrollable {
+.react-datepicker__month-dropdown--scrollable, .react-datepicker__month-year-dropdown--scrollable, .react-datepicker__year-dropdown--scrollable {
     height: 150px;
     overflow-y: scroll
 }
 
-.react-datepicker__month-option,.react-datepicker__month-year-option,.react-datepicker__year-option {
+.react-datepicker__month-option, .react-datepicker__month-year-option, .react-datepicker__year-option {
     line-height: 20px;
     width: 100%;
     display: block;
@@ -3286,12 +3290,12 @@ figure {
     margin-right: auto
 }
 
-.react-datepicker__month-option:first-of-type,.react-datepicker__month-year-option:first-of-type,.react-datepicker__year-option:first-of-type {
+.react-datepicker__month-option:first-of-type, .react-datepicker__month-year-option:first-of-type, .react-datepicker__year-option:first-of-type {
     border-top-left-radius: .3rem;
     border-top-right-radius: .3rem
 }
 
-.react-datepicker__month-option:last-of-type,.react-datepicker__month-year-option:last-of-type,.react-datepicker__year-option:last-of-type {
+.react-datepicker__month-option:last-of-type, .react-datepicker__month-year-option:last-of-type, .react-datepicker__year-option:last-of-type {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -3300,19 +3304,19 @@ figure {
     border-bottom-right-radius: .3rem
 }
 
-.react-datepicker__month-option:hover,.react-datepicker__month-year-option:hover,.react-datepicker__year-option:hover {
+.react-datepicker__month-option:hover, .react-datepicker__month-year-option:hover, .react-datepicker__year-option:hover {
     background-color: #ccc
 }
 
-.react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming,.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming,.react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming {
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-upcoming, .react-datepicker__month-year-option:hover .react-datepicker__navigation--years-upcoming, .react-datepicker__year-option:hover .react-datepicker__navigation--years-upcoming {
     border-bottom-color: #b3b3b3
 }
 
-.react-datepicker__month-option:hover .react-datepicker__navigation--years-previous,.react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous,.react-datepicker__year-option:hover .react-datepicker__navigation--years-previous {
+.react-datepicker__month-option:hover .react-datepicker__navigation--years-previous, .react-datepicker__month-year-option:hover .react-datepicker__navigation--years-previous, .react-datepicker__year-option:hover .react-datepicker__navigation--years-previous {
     border-top-color: #b3b3b3
 }
 
-.react-datepicker__month-option--selected,.react-datepicker__month-year-option--selected,.react-datepicker__year-option--selected {
+.react-datepicker__month-option--selected, .react-datepicker__month-year-option--selected, .react-datepicker__year-option--selected {
     position: absolute;
     left: 15px
 }
@@ -3370,7 +3374,7 @@ figure {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     left: 0;
     top: 0;
     justify-content: center;
@@ -3379,19 +3383,19 @@ figure {
     z-index: 2147483647
 }
 
-.react-datepicker__portal .react-datepicker__day,.react-datepicker__portal .react-datepicker__day-name,.react-datepicker__portal .react-datepicker__time-name {
+.react-datepicker__portal .react-datepicker__day, .react-datepicker__portal .react-datepicker__day-name, .react-datepicker__portal .react-datepicker__time-name {
     width: 3rem;
     line-height: 3rem
 }
 
-@media (max-height: 550px),(max-width:400px) {
-    .react-datepicker__portal .react-datepicker__day,.react-datepicker__portal .react-datepicker__day-name,.react-datepicker__portal .react-datepicker__time-name {
-        width:2rem;
+@media (max-height: 550px),(max-width: 400px) {
+    .react-datepicker__portal .react-datepicker__day, .react-datepicker__portal .react-datepicker__day-name, .react-datepicker__portal .react-datepicker__time-name {
+        width: 2rem;
         line-height: 2rem
     }
 }
 
-.react-datepicker__portal .react-datepicker-time__header,.react-datepicker__portal .react-datepicker__current-month {
+.react-datepicker__portal .react-datepicker-time__header, .react-datepicker__portal .react-datepicker__current-month {
     font-size: 1.44rem
 }
 
@@ -3435,9 +3439,9 @@ figure {
     gap: 16px;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--base-white,#fff);
-    box-shadow: 0 8px 8px -4px rgba(16,24,40,.03),0 20px 24px -4px rgba(16,24,40,.08)
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, .03), 0 20px 24px -4px rgba(16, 24, 40, .08)
 }
 
 .DatePicker_mixi-date-picker__hHq_t .react-datepicker__triangle {
@@ -3445,7 +3449,7 @@ figure {
 }
 
 .DatePicker_mixi-date-picker__hHq_t .react-datepicker__header {
-    background: var(--base-white,#fff);
+    background: var(--base-white, #fff);
     border-bottom: none;
     margin: 0
 }
@@ -3459,14 +3463,14 @@ figure {
     pointer-events: none
 }
 
-.DatePicker_calendarCell__KNIHX,.DatePicker_mixi-date-picker__hHq_t .react-datepicker__day-name {
+.DatePicker_calendarCell__KNIHX, .DatePicker_mixi-date-picker__hHq_t .react-datepicker__day-name {
     display: inline-flex;
     width: 40px;
     height: 40px;
     padding: 10px 8px;
     justify-content: center;
     align-items: center;
-    color: var(--gray-700,#344054);
+    color: var(--gray-700, #344054);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -3487,14 +3491,14 @@ figure {
 }
 
 .DatePicker_calendarCell__KNIHX:hover {
-    background: var(--gray-50,#f9fafb);
+    background: var(--gray-50, #f9fafb);
     border-radius: 50%;
-    color: var(--gray-700,#344054)
+    color: var(--gray-700, #344054)
 }
 
 .DatePicker_selectedDate__zfjV4 {
-    background: var(--primary-base,#77dada);
-    color: var(--primary-dark,#0e4f4f);
+    background: var(--primary-base, #77dada);
+    color: var(--primary-dark, #0e4f4f);
     border-radius: 50%
 }
 
@@ -3510,14 +3514,14 @@ figure {
     fill: var(--base-white)
 }
 
-.Input_input-group__6PMfq>label {
+.Input_input-group__6PMfq > label {
     position: absolute;
     top: 0;
     transform: translateY(-50%);
     left: 16px;
     background-color: #fff;
     padding: 0 4px;
-    color: var(--gray-600,#475467)
+    color: var(--gray-600, #475467)
 }
 
 .Input_required__eYDG_:after {
@@ -3525,7 +3529,7 @@ figure {
     color: red
 }
 
-.Input_input-group__6PMfq>svg {
+.Input_input-group__6PMfq > svg {
     width: 20px;
     height: 20px
 }
@@ -3540,31 +3544,31 @@ figure {
 }
 
 .Input_input-group__6PMfq.Input_disble__3BteC {
-    background: linear-gradient(0deg,var(--gray-200),var(--gray-200)),linear-gradient(0deg,var(--gray-50),var(--gray-50));
+    background: linear-gradient(0deg, var(--gray-200), var(--gray-200)), linear-gradient(0deg, var(--gray-50), var(--gray-50));
     border: 1px solid var(--gray-200)
 }
 
-.Input_destructive__pep3Z>.Input_input-group__6PMfq {
+.Input_destructive__pep3Z > .Input_input-group__6PMfq {
     border: 1px solid var(--error-base)
 }
 
-.Input_destructive__pep3Z>.Input_hint-text__XP_4k {
+.Input_destructive__pep3Z > .Input_hint-text__XP_4k {
     color: var(--error-base)
 }
 
-.Input_destructive__pep3Z>.Input_input-group__6PMfq:focus-within {
+.Input_destructive__pep3Z > .Input_input-group__6PMfq:focus-within {
     box-shadow: 0 0 0 4px var(--error-light)
 }
 
-.Input_input-group__6PMfq>input:disabled {
+.Input_input-group__6PMfq > input:disabled {
     color: var(--gray-400)
 }
 
-.Input_input-group__6PMfq>svg>path {
+.Input_input-group__6PMfq > svg > path {
     stroke: var(--gray-400)
 }
 
-.Input_input-group__6PMfq>input,.Input_input-group__6PMfq>textarea {
+.Input_input-group__6PMfq > input, .Input_input-group__6PMfq > textarea {
     border: none;
     flex-grow: 1;
     width: 0;
@@ -3572,35 +3576,35 @@ figure {
     height: 24px
 }
 
-.Input_input-group__6PMfq>input:focus,.Input_input-group__6PMfq>textarea:focus {
+.Input_input-group__6PMfq > input:focus, .Input_input-group__6PMfq > textarea:focus {
     border: none;
     outline: none
 }
 
-.Input_input-group__6PMfq>textarea {
+.Input_input-group__6PMfq > textarea {
     height: 140px
 }
 
-.Input_input-group__6PMfq>input::-webkit-input-placeholder,.Input_input-group__6PMfq>textarea::-webkit-input-placeholder {
+.Input_input-group__6PMfq > input::-webkit-input-placeholder, .Input_input-group__6PMfq > textarea::-webkit-input-placeholder {
     color: var(--gray-400)
 }
 
-.Input_input-group__6PMfq>input:-ms-input-placeholder {
+.Input_input-group__6PMfq > input:-ms-input-placeholder {
     color: var(--gray-400)
 }
 
-.Input_input-group__6PMfq>input::-moz-placeholder {
+.Input_input-group__6PMfq > input::-moz-placeholder {
     color: var(--gray-400);
-    font-family: Archivo,sans-serif;
+    font-family: Archivo, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px
 }
 
-.Input_input-group__6PMfq>input::placeholder {
+.Input_input-group__6PMfq > input::placeholder {
     color: var(--gray-400);
-    font-family: Archivo,sans-serif;
+    font-family: Archivo, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -3628,7 +3632,7 @@ figure {
     inset: 0;
     z-index: 999;
     pointer-events: auto;
-    background: var(--gray-900,#101828)
+    background: var(--gray-900, #101828)
 }
 
 .LightBox_open___yES3 {
@@ -3643,14 +3647,14 @@ figure {
 }
 
 .LightBox_header__MnI7C .LightBox_title__NMdYU {
-    color: var(--base-white,#fff)
+    color: var(--base-white, #fff)
 }
 
 .LightBox_actions__bJzMI {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    background: var(--white-100,#fff);
+    background: var(--white-100, #fff);
     height: -moz-fit-content;
     height: fit-content
 }
@@ -3665,11 +3669,11 @@ figure {
 }
 
 .LightBox_price__cPtDE {
-    color: var(--primary-base,#77dada)
+    color: var(--primary-base, #77dada)
 }
 
 .LightBox_originalPrice__bwoFw {
-    color: var(--gray-400,#98a2b3);
+    color: var(--gray-400, #98a2b3);
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -3703,8 +3707,8 @@ figure {
 
 .LightBox_thumbs__eBVDO .LightBox_thumbItemActive___PgDy {
     border-radius: 8px;
-    border: 1px solid var(--primary-base,#77dada);
-    box-shadow: 0 0 0 4px #caf8f8,0 1px 2px 0 rgba(24,24,27,.05)
+    border: 1px solid var(--primary-base, #77dada);
+    box-shadow: 0 0 0 4px #caf8f8, 0 1px 2px 0 rgba(24, 24, 27, .05)
 }
 
 .Modal_close-btn__qCJKk {
@@ -3732,7 +3736,7 @@ figure {
 
 @media (max-width: 1024px) {
     .Modal_info-modal__KcCw4 {
-        width:100%
+        width: 100%
     }
 
     .Modal_info-modal__KcCw4 h5 {
@@ -3746,11 +3750,11 @@ figure {
 
 .Pagination_pagination__dV9rN {
     padding: 12px 24px 16px;
-    border-top: 1px solid var(--gray-200,#eaecf0)
+    border-top: 1px solid var(--gray-200, #eaecf0)
 }
 
-.Pagination_pagination__dV9rN label,.Pagination_pagination__dV9rN p {
-    color: var(--gray-700,#344054)
+.Pagination_pagination__dV9rN label, .Pagination_pagination__dV9rN p {
+    color: var(--gray-700, #344054)
 }
 
 .Pagination_pagination__dV9rN .Pagination_page-size__Rakop {
@@ -3760,24 +3764,24 @@ figure {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--gray-300,#d0d5dd);
-    background: var(--base-white,#fff);
+    border: 1px solid var(--gray-300, #d0d5dd);
+    background: var(--base-white, #fff);
     box-shadow: var(--shadow-xs)
 }
 
-.Pagination_page-size__Rakop>input[type=number] {
+.Pagination_page-size__Rakop > input[type=number] {
     border: none;
     outline: none;
     width: 30px;
     height: 24px;
-    color: var(--gray-900,#101828);
+    color: var(--gray-900, #101828);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px
 }
 
-.Pagination_page-size__Rakop>input[type=number]::-webkit-inner-spin-button {
+.Pagination_page-size__Rakop > input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none
 }
 
@@ -3785,7 +3789,7 @@ figure {
     display: flex;
     list-style-type: none;
     border-radius: 100px;
-    border: 1px solid var(--gray-300,#d0d5dd);
+    border: 1px solid var(--gray-300, #d0d5dd);
     box-shadow: var(--shadow-xs);
     width: -moz-fit-content;
     width: fit-content;
@@ -3798,16 +3802,16 @@ figure {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid var(--gray-300,#d0d5dd);
-    background: var(--base-white,#fff);
-    color: var(--gray-800,#1d2939)
+    border-right: 1px solid var(--gray-300, #d0d5dd);
+    background: var(--base-white, #fff);
+    color: var(--gray-800, #1d2939)
 }
 
 .Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt:last-child {
     border-right: none
 }
 
-.Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt:last-child,.Pagination_pagination-item__ZzJmt:first-child {
+.Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt:last-child, .Pagination_pagination-item__ZzJmt:first-child {
     padding: 10px 16px;
     gap: 8px;
     width: -moz-fit-content;
@@ -3820,12 +3824,12 @@ figure {
 }
 
 .Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt:hover {
-    background: var(--gray-50,#f9fafb);
+    background: var(--gray-50, #f9fafb);
     cursor: pointer
 }
 
 .Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt.Pagination_selected__G5yaV {
-    background: var(--gray-50,#f9fafb)
+    background: var(--gray-50, #f9fafb)
 }
 
 .Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt.Pagination_disabled__UwpSX {
@@ -3839,12 +3843,12 @@ figure {
 
 @media (max-width: 1024px) {
     .Pagination_pagination__dV9rN {
-        padding:12px 0;
+        padding: 12px 0;
         margin: auto;
         justify-content: center
     }
 
-    .Pagination_left-pagination__IuI30,.Pagination_pagination-container__J4wRd .Pagination_pagination-left-item__Ni_lJ,.Pagination_pagination-container__J4wRd .Pagination_pagination-right-item__xEHMH {
+    .Pagination_left-pagination__IuI30, .Pagination_pagination-container__J4wRd .Pagination_pagination-left-item__Ni_lJ, .Pagination_pagination-container__J4wRd .Pagination_pagination-right-item__xEHMH {
         display: none
     }
 
@@ -3852,7 +3856,7 @@ figure {
         width: 35px
     }
 
-    .Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt:last-child,.Pagination_pagination-item__ZzJmt:first-child {
+    .Pagination_pagination-container__J4wRd .Pagination_pagination-item__ZzJmt:last-child, .Pagination_pagination-item__ZzJmt:first-child {
         padding: 5px;
         width: 40px
     }
@@ -3875,14 +3879,14 @@ figure {
 
 .FlightSearchBox_grid__xi0yC {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 24px;
     grid-column-gap: 16px
 }
 
 .FlightSearchBox_dropdown__AuYJE {
-    min-width: 330px!important;
-    transform: translate3d(0,30px,0)!important
+    min-width: 330px !important;
+    transform: translate3d(0, 30px, 0) !important
 }
 
 .FlightSearchBox_dropdown-content__6gXtf {
@@ -3893,7 +3897,7 @@ figure {
 .FlightSearchBox_dropdown-action__63kqX {
     padding: 16px;
     width: 100%;
-    border-top: 1px solid var(--gray-200,#eaecf0)
+    border-top: 1px solid var(--gray-200, #eaecf0)
 }
 
 .FlightSearchBox_selectInput__bSojI {
@@ -3907,7 +3911,7 @@ figure {
     gap: 20px
 }
 
-.FlightSearchBox_dropdownPeople__X3F7V,.FlightSearchBox_dropdown__AuYJE {
+.FlightSearchBox_dropdownPeople__X3F7V, .FlightSearchBox_dropdown__AuYJE {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
@@ -3917,9 +3921,9 @@ figure {
     align-items: flex-start;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--base-white,#fff);
-    box-shadow: 0 8px 8px -4px rgba(16,24,40,.03),0 20px 24px -4px rgba(16,24,40,.08);
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, .03), 0 20px 24px -4px rgba(16, 24, 40, .08);
     z-index: 4
 }
 
@@ -3943,7 +3947,7 @@ figure {
 
 .FlightSearchBox_dropdown-item__Qg9TO:hover {
     width: 100%;
-    background: var(--gray-50,#f9fafb)
+    background: var(--gray-50, #f9fafb)
 }
 
 .FlightSearchBox_selectInput__bSojI .FlightSearchBox_dropdown__AuYJE {
@@ -3952,7 +3956,7 @@ figure {
 
 @media (max-width: 1024px) {
     .FlightSearchBox_searchBox__x50fT {
-        width:95%;
+        width: 95%;
         padding: 16px;
         gap: 16px
     }
@@ -3990,8 +3994,8 @@ figure {
 }
 
 .FlightSearchNavigation_dropdown__LHeMB {
-    min-width: 330px!important;
-    transform: translate3d(0,70px,0)!important
+    min-width: 330px !important;
+    transform: translate3d(0, 70px, 0) !important
 }
 
 .FlightSearchNavigation_dropdown-content__VNSB8 {
@@ -4002,7 +4006,7 @@ figure {
 .FlightSearchNavigation_dropdown-action__a1Yzv {
     padding: 16px;
     width: 100%;
-    border-top: 1px solid var(--gray-200,#eaecf0)
+    border-top: 1px solid var(--gray-200, #eaecf0)
 }
 
 .FlightSearchNavigation_selectInput__V_rM5 {
@@ -4016,7 +4020,7 @@ figure {
     gap: 20px
 }
 
-.FlightSearchNavigation_dropdownPeople__h8zK_,.FlightSearchNavigation_dropdown__LHeMB {
+.FlightSearchNavigation_dropdownPeople__h8zK_, .FlightSearchNavigation_dropdown__LHeMB {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
@@ -4026,16 +4030,16 @@ figure {
     align-items: flex-start;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--base-white,#fff);
-    box-shadow: 0 8px 8px -4px rgba(16,24,40,.03),0 20px 24px -4px rgba(16,24,40,.08);
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, .03), 0 20px 24px -4px rgba(16, 24, 40, .08);
     z-index: 4
 }
 
 .FlightSearchNavigation_dropdown__LHeMB {
     min-width: 500px;
     padding-top: 10px;
-    transform: translate3d(0,70px,0);
+    transform: translate3d(0, 70px, 0);
     max-height: 200px;
     overflow-y: auto
 }
@@ -4052,7 +4056,7 @@ figure {
 
 .FlightSearchNavigation_dropdown-item__a1eK_:hover {
     width: 100%;
-    background: var(--gray-50,#f9fafb)
+    background: var(--gray-50, #f9fafb)
 }
 
 .FlightSearchNavigation_selectInput__V_rM5 .FlightSearchNavigation_dropdown__LHeMB {
@@ -4061,7 +4065,7 @@ figure {
 
 @media (max-width: 1024px) {
     .FlightSearchNavigation_wrapper__TCl60 {
-        width:90%;
+        width: 90%;
         padding: 16px;
         gap: 16px;
         margin: 50px auto
@@ -4098,20 +4102,20 @@ figure {
     padding: 64px 0 48px;
     display: flex;
     gap: 64px;
-    width: min(1216px,100%);
+    width: min(1216px, 100%);
     align-items: center
 }
 
-.Footer_footer1__GxwEZ>.Footer_footer__URfJd span {
+.Footer_footer1__GxwEZ > .Footer_footer__URfJd span {
     color: var(--gray-500);
     cursor: default
 }
 
-.Footer_footer1__GxwEZ>.Footer_footer__URfJd>div:first-child {
-    width: max(25%,320px)
+.Footer_footer1__GxwEZ > .Footer_footer__URfJd > div:first-child {
+    width: max(25%, 320px)
 }
 
-.Footer_footer1__GxwEZ>.Footer_footer__URfJd>div:last-child {
+.Footer_footer1__GxwEZ > .Footer_footer__URfJd > div:last-child {
     flex-grow: 1
 }
 
@@ -4128,7 +4132,7 @@ figure {
     flex-grow: 1
 }
 
-.Footer_footer2__PilQ6>.Footer_footer__URfJd {
+.Footer_footer2__PilQ6 > .Footer_footer__URfJd {
     padding: 48px 0;
     color: var(--gray-500)
 }
@@ -4145,7 +4149,7 @@ figure {
 
 @media (max-width: 1200px) {
     .Footer_footer__URfJd {
-        flex-direction:column;
+        flex-direction: column;
         align-items: flex-start;
         padding: 48px 16px
     }
@@ -4224,7 +4228,7 @@ figure {
 
 .Header_active___pfbP {
     color: var(--primary-dark);
-    border-bottom: 2px solid var(--primary-base,#77dada)
+    border-bottom: 2px solid var(--primary-base, #77dada)
 }
 
 .Header_menu-mb__P5vxd {
@@ -4233,7 +4237,7 @@ figure {
 
 @media (max-width: 1024px) {
     .Header_nav-container__MeHQZ {
-        display:none
+        display: none
     }
 
     .Header_logo__tC3WE {
@@ -4254,11 +4258,11 @@ figure {
     }
 
     .Header_menu-mb__content__kpsRd {
-        transform: translate3d(0,96px,0)!important;
+        transform: translate3d(0, 96px, 0) !important;
         color: #000;
-        min-width: 0!important;
-        width: 100%!important;
-        padding-top: 0!important
+        min-width: 0 !important;
+        width: 100% !important;
+        padding-top: 0 !important
     }
 
     .Header_menu-mb__nav-item__5IkmV {
@@ -4271,7 +4275,7 @@ figure {
 
     .Header_menu-mb__nav-item--active__j2Om2 {
         color: var(--base-white);
-        background-color: var(--primary-base,#77dada)
+        background-color: var(--primary-base, #77dada)
     }
 }
 
@@ -4320,7 +4324,7 @@ figure {
 
 @media (max-width: 1024px) {
     .PolularShips_section__8AeVl {
-        padding:24px;
+        padding: 24px;
         gap: 24px
     }
 
@@ -4340,7 +4344,7 @@ figure {
     flex-direction: column;
     gap: 24px;
     flex: 1 0;
-    color: var(--gray-900,#101828)
+    color: var(--gray-900, #101828)
 }
 
 .ReviewQuote_quoteContent__LOp__ {
@@ -4351,7 +4355,7 @@ figure {
 
 @media (max-width: 1200px) {
     .ReviewQuote_reviewQuote__oLHNg {
-        flex-direction:column;
+        flex-direction: column;
         gap: 24px
     }
 }
@@ -4387,15 +4391,15 @@ figure {
     padding-top: 10px;
     position: absolute;
     inset: 0 auto auto 0;
-    transform: translate3d(0,70px,0);
+    transform: translate3d(0, 70px, 0);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--base-white,#fff);
-    box-shadow: 0 8px 8px -4px rgba(16,24,40,.03),0 20px 24px -4px rgba(16,24,40,.08);
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, .03), 0 20px 24px -4px rgba(16, 24, 40, .08);
     z-index: 1;
     overflow-y: auto;
     max-height: 240px
@@ -4413,7 +4417,7 @@ figure {
 
 .SearchBox_dropdown-item__VTIdt:hover {
     width: 100%;
-    background: var(--gray-50,#f9fafb)
+    background: var(--gray-50, #f9fafb)
 }
 
 .SearchBox_selectInput__7ln_I .SearchBox_dropdown___ITc7 {
@@ -4422,7 +4426,7 @@ figure {
 
 @media (max-width: 1024px) {
     .SearchBox_searchBox__kO_MC {
-        width:95%;
+        width: 95%;
         padding: 16px;
         gap: 16px
     }
@@ -4431,11 +4435,11 @@ figure {
         font-size: 24px;
         line-height: 32px;
         max-width: 90%;
-        margin: auto!important
+        margin: auto !important
     }
 
     .SearchBox_description__XPES7 {
-        font-size: 16px!important
+        font-size: 16px !important
     }
 
     .SearchBox_input-group__fNreQ {
@@ -4484,12 +4488,12 @@ figure {
 
 .SectionHeader_title__eE2Rf h4 {
     margin: 0;
-    color: var(--gray-900,#101828)
+    color: var(--gray-900, #101828)
 }
 
 .SectionHeader_sectionHeader__60CR7 .SectionHeader_description__2ZD1p {
     width: 488px;
-    color: var(--gray-600,#475467);
+    color: var(--gray-600, #475467);
     flex-shrink: 0
 }
 
@@ -4499,7 +4503,7 @@ figure {
 
 @media (max-width: 1024px) {
     .SectionHeader_sectionHeader__60CR7 {
-        flex-direction:column;
+        flex-direction: column;
         align-items: flex-start;
         text-align: left;
         gap: 24px
@@ -4654,9 +4658,9 @@ figure {
     touch-action: none
 }
 
-.rc-slider,.rc-slider * {
+.rc-slider, .rc-slider * {
     box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 .rc-slider-rail {
@@ -4667,7 +4671,7 @@ figure {
     border-radius: 6px
 }
 
-.rc-slider-track,.rc-slider-tracks {
+.rc-slider-track, .rc-slider-tracks {
     position: absolute;
     height: 4px;
     background-color: #abe2fb;
@@ -4784,15 +4788,15 @@ figure {
     background-color: #ccc
 }
 
-.rc-slider-disabled .rc-slider-dot,.rc-slider-disabled .rc-slider-handle {
+.rc-slider-disabled .rc-slider-dot, .rc-slider-disabled .rc-slider-handle {
     background-color: #fff;
     border-color: #ccc;
     box-shadow: none;
     cursor: not-allowed
 }
 
-.rc-slider-disabled .rc-slider-dot,.rc-slider-disabled .rc-slider-mark-text {
-    cursor: not-allowed!important
+.rc-slider-disabled .rc-slider-dot, .rc-slider-disabled .rc-slider-mark-text {
+    cursor: not-allowed !important
 }
 
 .rc-slider-vertical {
@@ -4843,14 +4847,14 @@ figure {
     margin-left: -2px
 }
 
-.rc-slider-tooltip-zoom-down-appear,.rc-slider-tooltip-zoom-down-enter,.rc-slider-tooltip-zoom-down-leave {
-    display: block!important;
+.rc-slider-tooltip-zoom-down-appear, .rc-slider-tooltip-zoom-down-enter, .rc-slider-tooltip-zoom-down-leave {
+    display: block !important;
     animation-duration: .3s;
     animation-fill-mode: both;
     animation-play-state: paused
 }
 
-.rc-slider-tooltip-zoom-down-appear.rc-slider-tooltip-zoom-down-appear-active,.rc-slider-tooltip-zoom-down-enter.rc-slider-tooltip-zoom-down-enter-active {
+.rc-slider-tooltip-zoom-down-appear.rc-slider-tooltip-zoom-down-appear-active, .rc-slider-tooltip-zoom-down-enter.rc-slider-tooltip-zoom-down-enter-active {
     animation-name: rcSliderTooltipZoomDownIn;
     animation-play-state: running
 }
@@ -4860,13 +4864,13 @@ figure {
     animation-play-state: running
 }
 
-.rc-slider-tooltip-zoom-down-appear,.rc-slider-tooltip-zoom-down-enter {
+.rc-slider-tooltip-zoom-down-appear, .rc-slider-tooltip-zoom-down-enter {
     transform: scale(0);
-    animation-timing-function: cubic-bezier(.23,1,.32,1)
+    animation-timing-function: cubic-bezier(.23, 1, .32, 1)
 }
 
 .rc-slider-tooltip-zoom-down-leave {
-    animation-timing-function: cubic-bezier(.755,.05,.855,.06)
+    animation-timing-function: cubic-bezier(.755, .05, .855, .06)
 }
 
 @keyframes rcSliderTooltipZoomDownIn {
@@ -4902,9 +4906,9 @@ figure {
     visibility: visible
 }
 
-.rc-slider-tooltip,.rc-slider-tooltip * {
+.rc-slider-tooltip, .rc-slider-tooltip * {
     box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 .rc-slider-tooltip-hidden {
@@ -4969,7 +4973,7 @@ figure {
 
 @media (max-width: 1024px) {
     .ReviewsSection_section___wAag {
-        padding:24px;
+        padding: 24px;
         gap: 24px
     }
 }
@@ -4994,7 +4998,7 @@ figure {
 
 @media (max-width: 1024px) {
     .PartnerSection_section__7gxSR {
-        padding:24px;
+        padding: 24px;
         gap: 24px
     }
 
@@ -5029,7 +5033,7 @@ figure {
 
 @media (max-width: 1024px) {
     .PartnerSection_section__P2CUK {
-        padding:24px;
+        padding: 24px;
         gap: 24px
     }
 
@@ -5056,14 +5060,14 @@ figure {
     flex-wrap: wrap
 }
 
-.BlogSection_action__wVG32,.BlogSection_cardList__W14ir {
+.BlogSection_action__wVG32, .BlogSection_cardList__W14ir {
     display: flex;
     justify-content: center
 }
 
 @media (max-width: 1024px) {
     .BlogSection_section__D6dfs {
-        padding:24px;
+        padding: 24px;
         gap: 24px
     }
 
@@ -5092,7 +5096,7 @@ figure {
 
 @media (max-width: 1024px) {
     .NotFound_not-found__d9jn8 {
-        padding:24px
+        padding: 24px
     }
 
     .NotFound_not-found__d9jn8 h5 {
@@ -5112,8 +5116,8 @@ figure {
 .RatingInput_rating___h9Un {
     padding: 12px 20px;
     border-radius: 28px;
-    border: 1px solid var(--gray-200,#eaecf0);
-    background: var(--base-white,#fff);
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
     box-shadow: var(--shadow-xs);
     height: -moz-fit-content;
     height: fit-content
@@ -5124,7 +5128,7 @@ figure {
 }
 
 .RatingInput_rating___h9Un label {
-    color: var(--gray-600,#475467)
+    color: var(--gray-600, #475467)
 }
 
 .RatingInput_rating___h9Un .RatingInput_star-icon__54B_9 {
@@ -5170,7 +5174,7 @@ figure {
 .Steps_step-item__XtHlS:after {
     position: absolute;
     content: "";
-    border-bottom: 2px solid var(--gray-200,#eaecf0);
+    border-bottom: 2px solid var(--gray-200, #eaecf0);
     width: 100%;
     top: 16px;
     left: 50%;
@@ -5178,7 +5182,7 @@ figure {
 }
 
 .Steps_step-item-done__gyP4L:after {
-    border-bottom: 2px solid var(--primary-base,#77dada)
+    border-bottom: 2px solid var(--primary-base, #77dada)
 }
 
 .Steps_step-item__XtHlS:last-child:after {
@@ -5191,7 +5195,7 @@ figure {
     min-width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: var(--gray-100,#f2f4f7);
+    background: var(--gray-100, #f2f4f7);
     display: flex;
     align-items: center;
     justify-content: center
@@ -5207,7 +5211,7 @@ figure {
 }
 
 .Steps_step-icon-inprogress__Ep1hC {
-    background: var(--primary-base,#0e4f4f);
+    background: var(--primary-base, #0e4f4f);
     box-shadow: 0 0 0 4px #caf8f8
 }
 
@@ -5216,7 +5220,7 @@ figure {
 }
 
 .Steps_step-icon-done__cAwDH {
-    background: var(--primary-base,#0e4f4f)
+    background: var(--primary-base, #0e4f4f)
 }
 
 .Steps_step-icon-done__cAwDH:after {
@@ -5225,7 +5229,7 @@ figure {
 
 @media (max-width: 1024px) {
     .Steps_steps__QQJuj {
-        flex-direction:column;
+        flex-direction: column;
         gap: 0;
         align-items: flex-start
     }
@@ -5241,7 +5245,7 @@ figure {
     .Steps_steps__QQJuj .Steps_step-item__XtHlS:after {
         position: absolute;
         content: "";
-        border-left: 2px solid var(--gray-200,#eaecf0);
+        border-left: 2px solid var(--gray-200, #eaecf0);
         height: calc(100% - 42px);
         width: 0;
         top: 36px;
@@ -5268,7 +5272,7 @@ figure {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     z-index: 9999
 }
 
@@ -5289,7 +5293,7 @@ figure {
     text-align: left
 }
 
-.Table_td__Pd5qj,.Table_th__MmXKP {
+.Table_td__Pd5qj, .Table_th__MmXKP {
     color: #475467;
     font-family: Archivo;
     font-style: normal;
@@ -5303,7 +5307,7 @@ figure {
     line-height: 20px;
     height: 72px;
     padding: 16px 8px 16px 24px;
-    border-bottom: 1px solid var(--gray-200,#eaecf0)
+    border-bottom: 1px solid var(--gray-200, #eaecf0)
 }
 
 .Table_tfoot___vDa5 {
@@ -5333,12 +5337,12 @@ figure {
     box-shadow: none
 }
 
-.Tabs_active__vin32,.Tabs_tabItem__LMiWK:hover {
+.Tabs_active__vin32, .Tabs_tabItem__LMiWK:hover {
     box-shadow: var(--shadow-sm);
     cursor: pointer
 }
 
-.Tabs_active__vin32,.Tabs_tabItem__LMiWK:focus,.Tabs_tabItem__LMiWK:hover {
+.Tabs_active__vin32, .Tabs_tabItem__LMiWK:focus, .Tabs_tabItem__LMiWK:hover {
     color: var(--gray-700);
     background: var(--base-white)
 }
@@ -5360,7 +5364,7 @@ figure {
     padding: 2px 8px;
     align-items: center;
     border-radius: 16px;
-    background: var(--gray-100,#f2f4f7);
+    background: var(--gray-100, #f2f4f7);
     color: var(--gray-700)
 }
 
@@ -5370,19 +5374,19 @@ figure {
     align-items: center;
     gap: 8px;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--gray-50,#f9fafb)
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--gray-50, #f9fafb)
 }
 
 .Tabs_tabMobile__JFKYi {
-    border: 1px solid var(--gray-300,#d0d5dd);
-    background: var(--base-white,#fff);
-    box-shadow: 0 1px 2px 0 rgba(16,24,40,.05);
+    border: 1px solid var(--gray-300, #d0d5dd);
+    background: var(--base-white, #fff);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05);
     border-radius: 8px
 }
 
-.Tabs_tabMobile__JFKYi>div:nth-child(2) {
-    border-top: 1px solid var(--gray-300,#d0d5dd)
+.Tabs_tabMobile__JFKYi > div:nth-child(2) {
+    border-top: 1px solid var(--gray-300, #d0d5dd)
 }
 
 .Tabs_tabMobile__header__N1Oml {
@@ -5395,7 +5399,7 @@ figure {
     stroke: var(--black)
 }
 
-.Tabs_tabMobile__header__N1Oml>svg {
+.Tabs_tabMobile__header__N1Oml > svg {
     width: 20px;
     height: 20px
 }
@@ -5408,15 +5412,15 @@ figure {
     padding-top: 10px;
     position: absolute;
     inset: 0 auto auto 0;
-    transform: translate3d(0,70px,0);
+    transform: translate3d(0, 70px, 0);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--base-white,#fff);
-    box-shadow: 0 8px 8px -4px rgba(16,24,40,.03),0 20px 24px -4px rgba(16,24,40,.08);
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, .03), 0 20px 24px -4px rgba(16, 24, 40, .08);
     z-index: 1
 }
 
@@ -5425,14 +5429,14 @@ figure {
 }
 
 .RoomPicker_item__iAAYv {
-    color: var(--gray-900,#101828);
+    color: var(--gray-900, #101828);
     width: 280px;
     padding-bottom: 16px;
-    border-bottom: 1px solid var(--gray-100,#f2f4f7)
+    border-bottom: 1px solid var(--gray-100, #f2f4f7)
 }
 
 .RoomPicker_item__iAAYv .RoomPicker_item-value__UNmMX {
-    color: var(--primary-dark,#0e4f4f)
+    color: var(--primary-dark, #0e4f4f)
 }
 
 .RoomPicker_item__iAAYv:last-child {
@@ -5443,7 +5447,7 @@ figure {
 .RoomPicker_item__iAAYv .RoomPicker_group-btn__vqhM4 {
     display: flex;
     border-radius: 100px;
-    border: 1px solid var(--gray-200,#eaecf0)
+    border: 1px solid var(--gray-200, #eaecf0)
 }
 
 .RoomPicker_item__iAAYv .RoomPicker_item-btn__YdkVf {
@@ -5461,13 +5465,13 @@ figure {
 }
 
 .RoomPicker_item__iAAYv .RoomPicker_minus__hFOpF {
-    border-right: 1px solid var(--gray-200,#eaecf0)
+    border-right: 1px solid var(--gray-200, #eaecf0)
 }
 
 .RoomPicker_actions__IHFsT {
     width: 100%;
     padding: 16px;
-    border-top: 1px solid var(--gray-200,#eaecf0)
+    border-top: 1px solid var(--gray-200, #eaecf0)
 }
 
 .RoomPicker_actions__IHFsT .RoomPicker_action-btn__wMsIY {
@@ -5478,7 +5482,7 @@ figure {
 }
 
 .Collapse_collapse__g6PnD {
-    transition: height .25s cubic-bezier(.4,0,.2,1)
+    transition: height .25s cubic-bezier(.4, 0, .2, 1)
 }
 
 .Collapse_collapsed-content__UzsXV {
@@ -5486,7 +5490,7 @@ figure {
 }
 
 .Collapse_open-header__wyuXQ {
-    border-bottom: 1px solid var(--gray-200,#eaecf0)
+    border-bottom: 1px solid var(--gray-200, #eaecf0)
 }
 
 .Dropdown_dropdown__3C5hP {
@@ -5496,15 +5500,15 @@ figure {
     padding-top: 10px;
     position: absolute;
     inset: 0 auto auto 0;
-    transform: translate3d(0,70px,0);
+    transform: translate3d(0, 70px, 0);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
     border-radius: 8px;
-    border: 1px solid var(--gray-100,#f2f4f7);
-    background: var(--base-white,#fff);
-    box-shadow: 0 8px 8px -4px rgba(16,24,40,.03),0 20px 24px -4px rgba(16,24,40,.08);
+    border: 1px solid var(--gray-100, #f2f4f7);
+    background: var(--base-white, #fff);
+    box-shadow: 0 8px 8px -4px rgba(16, 24, 40, .03), 0 20px 24px -4px rgba(16, 24, 40, .08);
     z-index: 1
 }
 
@@ -5522,5 +5526,5 @@ figure {
 
 .Select_dropdown-item___li6M:hover {
     width: 100%;
-    background: var(--gray-50,#f9fafb)
+    background: var(--gray-50, #f9fafb)
 }
