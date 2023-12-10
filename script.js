@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Function to load Navbar and Footer from index.html
     function loadNavbarAndFooter() {
-        fetch('./index.html')
+        fetch('index.html')
             .then(response => response.text())
             .then(data => {
                     const navbar = data.match(/<nav(.*?)<\/nav>/s)[0];
