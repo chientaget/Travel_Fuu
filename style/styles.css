@@ -183,6 +183,25 @@ video {
     gap: 8px;
 }
 
+.people {
+    position: relative;
+    padding: 5% 0 5% 6% !important;
+    border-radius: 100px;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-text {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    font-size: 14px;
+    color: #888888;
+    background-color: #FFFFFF;
+}
 
 /* Square Box Styles */
 .square-box {

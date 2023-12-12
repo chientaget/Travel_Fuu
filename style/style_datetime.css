@@ -1,0 +1,31 @@
+
+span.input-group-text.bg-light.d-block {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.input-group-append {
+    cursor: pointer;
+}
+
+.datepicker td,
+th {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.datepicker {
+    border: 1px solid black;
+}
+
+.input-group {
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-xs);
+    border-radius: 100px;
+
+}
+
+.input-group .date {
+    padding: 10% 10% 10% 10% !important;
+}
