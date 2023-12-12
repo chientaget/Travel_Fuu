@@ -238,11 +238,16 @@ video {
     border-radius: 24px !important;
     max-width: 540px;
     padding: 0 0 0 3%;
+    cursor: pointer;
 }
 
 .Card-DN img {
     max-height: 120px;
     max-width: 120px;
+}
+
+.row-toLocation, .square-box, .text-center {
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -780,4 +785,12 @@ a {
 .card-item .position-absolute {
     margin-top: 3%;
     margin-left: 3%;
+}
+
+.SearchPageDetail_search-page {
+    cursor: pointer;
+}
+
+.row-duthuyen a {
+    color: var(--gray-600, #475467) !important;
 }
