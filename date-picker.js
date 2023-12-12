@@ -13,6 +13,6 @@ $.fn.datepicker.dates["en"] = {
     today: "Today",
     clear: "Clear",
     format: "mm/dd/yyyy",
-    titleFormat: "MM yyyy" /* Leverages same syntax as 'format' */,
+    titleFormat: "MM yyyy",
     weekStart: 0,
 };
