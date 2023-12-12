@@ -634,3 +634,39 @@ a {
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+.SearchPageDetail_side-bar {
+    border: 1px solid var(--gray-200, #eaecf0);
+    padding: 0% 2% 0% 2%;
+    border-radius: 20px;
+    box-shadow: rgba(16, 24, 40, 0.06) 0px 1px 2px 0px, rgba(16, 24, 40, 0.1) 0px 1px 3px 0px;
+}
+
+.SearchPageDetail_side-bar__header {
+    border-bottom: 1px solid var(--gray-200, #eaecf0);
+    padding: 5%;
+}
+
+.ranks {
+    border-bottom: 1px solid var(--gray-200, #eaecf0);
+    padding: 5%;
+}
+
+.form-check-label, .form-check-input {
+    cursor: pointer;
+}
+
+
+.form-check-input:checked {
+    background-color: #77dada;
+    border-color: var(--gray-200, #eaecf0);
+}
+
+.form-check-label {
+    color: var(--gray-700, #344054);
+    user-select: none;
+}
+
+.tool {
+    padding: 5% 0 8%;
+}
