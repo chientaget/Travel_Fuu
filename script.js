@@ -1,6 +1,6 @@
 <!-- script.js -->
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to load Navbar and Footer from index.html
+    // Function to load Navbar and Footer from thong-tin-du-thuyen.html
     function loadNavbarAndFooter() {
         fetch('index.html')
             .then(response => response.text())
