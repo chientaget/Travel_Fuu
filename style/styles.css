@@ -907,4 +907,40 @@ a {
     margin: 0;
 }
 
+.oder {
+    padding-top: 5em;
+}
 
+.oder-option {
+    border-radius: 24px;
+    background-color: #f2f4f7;
+    padding: 32px;
+    background-image: url(img/section-background.png);
+    background-repeat: repeat;
+    gap: 40px;
+}
+
+.oder-option-clear-option {
+    border: none !important;
+}
+
+.btn-clear-option {
+    padding: 10px 16px;
+    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+    background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, #eaecf0, #eaecf0);
+    border: 1px solid #eaecf0;
+    color: var(--gray-800);
+    fill: var(--gray-800);
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    gap: 8px;
+}
+
+.info-du-thuyen {
+    border-radius: 32px;
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
+    box-shadow: var(--shadow-sm);
+    height: auto;
+}
