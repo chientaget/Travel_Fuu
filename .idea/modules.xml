@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MixiVivu.iml" filepath="$PROJECT_DIR$/.idea/MixiVivu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PHP_CONNECTION/.idea/PHP_CONNECTION.iml" filepath="$PROJECT_DIR$/../PHP_CONNECTION/.idea/PHP_CONNECTION.iml" />
       <module fileurl="file://$PROJECT_DIR$/../carousel-10/.idea/carousel-10.iml" filepath="$PROJECT_DIR$/../carousel-10/.idea/carousel-10.iml" />
     </modules>
   </component>
