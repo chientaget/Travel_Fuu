@@ -915,7 +915,7 @@ a {
     border-radius: 24px;
     background-color: #f2f4f7;
     padding: 32px;
-    background-image: url(img/section-background.png);
+    background-image: url(/img/section-background.png);
     background-repeat: repeat;
     gap: 40px;
 }
@@ -943,4 +943,64 @@ a {
     background: var(--base-white, #fff);
     box-shadow: var(--shadow-sm);
     height: auto;
+}
+
+.quantity-counter button,
+.quantity-counter button:focus-within,
+.quantity-counter button:active,
+.quantity-counter button:hover {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.quantity-counter {
+    max-width: 60%;
+    background: linear-gradient(0deg, #fff, #fff), linear-gradient(0deg, #eaecf0, #eaecf0);
+    border: 1px solid #eaecf0;
+    color: var(--gray-800);
+    fill: var(--gray-800);
+    border-radius: 100px;
+}
+
+.Price-khach-number {
+    font-weight: 700;
+    color: var(--primary-dark, #0e4f4f);
+}
+
+.Price-khach-SL {
+    color: var(--gray-400, #98a2b3);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.card-delta img {
+    border-radius: 15%;
+}
+
+.oder-option-list {
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    gap: 20px;
+    padding: 3%;
+    margin: 3%;
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
+    box-shadow: var(--shadow-sm);
+}
+
+.thue-tron-tau,
+.dat-ngay {
+    border: 1px solid #eaecf0;
+    padding: 16px 20px;
+    display: flex;
+    border-radius: 100px;
+    box-shadow: var(--shadow-xs);
+}
+
+.dat-ngay {
+    background-color: var(--primary-base) !important;
 }
