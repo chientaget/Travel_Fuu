@@ -813,13 +813,14 @@ a {
     border-radius: 24px;
     display: flex !important;
     justify-content: center !important;
+    padding: 0 !important;
 }
 
 .feedback-5 label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
 }
 
 .gia {
@@ -833,12 +834,19 @@ a {
 
 .info2 {
     display: flex;
+
 }
 
 .ben-do {
     background-color: var(--gray-100);
     color: var(--gray-700, #344054);
     border-radius: 24px;
+    padding: 0 0 0 2% !important;
+}
+
+.ben-do label {
+
+    margin: 0 !important;
 }
 
 .scoll-map {
