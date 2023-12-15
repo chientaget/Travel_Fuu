@@ -1004,3 +1004,17 @@ a {
 .dat-ngay {
     background-color: var(--primary-base) !important;
 }
+
+.gioi-thieu-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.figcaption {
+    color: #FFFFFF;
+    position: absolute;
+    background-color: #2d333a;
+    border-radius: 3px;
+    right: 3%;
+    font-size: 12px;
+}
