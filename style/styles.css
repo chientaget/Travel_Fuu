@@ -367,6 +367,11 @@ footer {
     padding: 20px 0;
 }
 
+.link {
+    color: #98a2b3;
+    cursor: pointer;
+}
+
 .link:hover {
     color: var(--primary-dark);
     cursor: pointer;
@@ -1025,4 +1030,41 @@ a {
     border-radius: 3px;
     right: 3%;
     font-size: 12px;
+}
+
+.infos {
+    color: #475467;
+}
+
+.card-infos {
+    border-radius: 32px;
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
+    box-shadow: var(--shadow-sm);
+    padding: 2%;
+}
+
+.card-infos-icon svg {
+    background-color: #77dada;
+    border-radius: 100px;
+    height: 45px;
+    width: auto;
+    padding: 2%;
+}
+
+.info-4-card {
+    border-radius: 32px;
+    border: 1px solid var(--gray-200, #eaecf0);
+    background: var(--base-white, #fff);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.info-5-card {
+    border-radius: 32px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200, #eaecf0);
+    margin: 2%;
+    padding: 2%;
 }
