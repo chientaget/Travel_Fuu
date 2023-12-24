@@ -65,8 +65,42 @@
     </div>
 </nav>
 
-<div class="video-box" style="margin: 0 12% 0 12%">
-    <video src="media/videovivu.mp4" autoplay muted loop></video>
+<div class="video-box" style="margin: 0 12% 0 12% ;height: auto !important;max-height: 700px" >
+<!--    <video src="media/videovivu.mp4" autoplay muted loop></video>-->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/bn-1.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bn-2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+<!--            <div class="carousel-item">-->
+<!--                <img src="img/bn-3.jpg" class="d-block w-100" alt="Image 3">-->
+<!--            </div>-->
+            <div class="carousel-item">
+                <img src="img/bn-4.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bn-5.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bn-6.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bn-7.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 <div class="container">
 
@@ -124,7 +158,7 @@
                 </div>
 
                 <div class="col-md">
-                    <button class="btn btn-primary" style="height:60px; width: 100%"> Tìm kiếm</button>
+                    <a href="tim_du_thuyen.html"><button class="btn btn-primary" style="height:60px; width: 100%"> Tìm kiếm</button></a>
                 </div>
 
             </div>
