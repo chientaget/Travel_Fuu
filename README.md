@@ -1,6 +1,6 @@
 
 Webview
-https://chientaget.github.io/Travel_Fuu/
+https://chientaget.github.io/Travel_Fuuu/
 
 http://bit.ly/TravelFuu
 
