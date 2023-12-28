@@ -9,10 +9,10 @@
     <meta name="author" content="">
     <title>Tạo mới đơn hàng</title>
     <!-- Bootstrap core CSS -->
-    <link href="../vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet"/>
     <!-- Custom styles for this template -->
-    <link href="../vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">
-    <script src="../vnpay_php/assets/jquery-1.11.3.min.js"></script>
+    <link href="/assets/jumbotron-narrow.css" rel="stylesheet">
+    <script src="/assets/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 <div class="container">
     <h3>Tạo mới đơn hàng</h3>
     <div class="table-responsive">
-        <form action="/vnpay_php/vnpay_create_payment.php" id="frmCreateOrder" method="post">
+        <form action="vnpay_create_payment.php" id="frmCreateOrder" method="post">
             <div class="form-group">
                 <label for="amount">Số tiền</label>
                 <input class="form-control" data-val="true" data-val-number="The field Amount must be a number."
@@ -45,6 +45,7 @@
 
             </div>
             <div class="form-group">
+                <f></f>
                 <h5>Chọn ngôn ngữ giao diện thanh toán:</h5>
                 <input type="radio" id="language" Checked="True" name="language" value="vn">
                 <label for="language">Tiếng việt</label><br>

@@ -9,10 +9,10 @@
     <meta name="author" content="">
     <title>Hoàn tiền giao dịch</title>
     <!-- Bootstrap core CSS -->
-    <link href="/vnpay_php/assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="/vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">
-    <script src="/vnpay_php/assets/jquery-1.11.3.min.js"></script>
+    <link href="/assets/jumbotron-narrow.css" rel="stylesheet">
+    <script src="/assets/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <h3>Refund</h3>
         </div>
         <div style="width: 100% ;border-bottom: 2px solid black;padding-bottom: 20px">
-            <form action="/vnpay_php/vnpay_refund.php" id="frmCreateOrder" method="post">
+            <form action="/vnpay_refund.php" id="frmCreateOrder" method="post">
                 <div class="form-group">
                     <label>Mã GD thanh toán cần hoàn (vnp_TxnRef):</label>
                     <input class="form-control" data-val="true" name="TxnRef" type="text" value="" />
