@@ -9,10 +9,10 @@
     <meta name="author" content="">
     <title>VNPAY RESPONSE</title>
     <!-- Bootstrap core CSS -->
-    <link href="/assets/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/Travel_Fuu/assets/bootstrap.min.css" rel="stylesheet"/>
     <!-- Custom styles for this template -->
-    <link href="/assets/jumbotron-narrow.css" rel="stylesheet">
-    <script src="/assets/jquery-1.11.3.min.js"></script>
+    <link href="/Travel_Fuu/assets/jumbotron-narrow.css" rel="stylesheet">
+    <script src="/Travel_Fuu/assets/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <?php
